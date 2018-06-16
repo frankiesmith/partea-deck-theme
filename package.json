@@ -1,0 +1,28 @@
+{
+  "name": "theme-fivehdstarter",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://git@gitlab.com/5hd/theme-fivehdstarter.git"
+  },
+  "author": "5HD",
+  "bugs": {
+    "url": "https://gitlab.com/5hd/theme-fivehdstarter/issues"
+  },
+  "homepage": "https://gitlab.com/5hd/theme-fivehdstarter#README",
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "foundation-sites": "^6.4.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "pump": "^3.0.0"
+  }
+}
