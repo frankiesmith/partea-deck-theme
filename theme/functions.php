@@ -8,8 +8,8 @@ function fivehd_enqueue_scripts_styles() {
 
   // **Everything** Foundation JS.
   // @todo: allow individual modules to be included, as required.
-  // wp_enqueue_script( 'foundation-kitchen-sink', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js', array('jquery'), '6.4.3', true );
-  // wp_add_inline_script( 'foundation-kitchen-sink', '(function($){$(document).foundation();})(jQuery);', 'after' );
+  wp_enqueue_script( 'foundation-kitchen-sink', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js', array('jquery'), '6.4.3', true );
+  wp_add_inline_script( 'foundation-kitchen-sink', '(function($){$(document).foundation();})(jQuery);', 'after' );
 
     wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css' );
 }
