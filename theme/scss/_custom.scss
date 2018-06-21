@@ -12,8 +12,18 @@ h2 {
     font-size: 1.8rem;
 }
 
-.home .entry-title {
-    display: none;
+.home {
+    .entry-title {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        animation: fadeIn 4s;
+    }
 }
 
 .slide-up {
@@ -21,8 +31,8 @@ h2 {
 }
 
 header {
+    position: static;
     background-color: #fff;
-    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -31,7 +41,6 @@ header {
         width: 220px;
         margin: auto;
         padding: 30px 0 0px 0;
-        animation: fadeIn 4s;
 
         svg {
             width: 100%;
@@ -113,6 +122,12 @@ header {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 250px;
+    background-color: lightgray;
 }
 
 .footer {
