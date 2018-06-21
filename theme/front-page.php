@@ -12,53 +12,48 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
-    <?php
+      <!-- Slider -->
+  <div class="slider-wrapper">
+    <div class="slider">
+      <div class="arrow animated infinite pulse">
+       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 161"><defs><style>.cls-1{fill:#fff}</style></defs><path class="cls-1" transform="rotate(135 170 81)" d="M81 57h177v51H81z"/><path class="cls-1" transform="rotate(45 82 81)" d="M-8 57h177v51H-8z"/></svg>
+        </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+  
+  jQuery.fn.autoscroll = function(selector) {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 900);
+}
+  
+  $('.arrow').on('click', function(){
+    $('.content').autoscroll();
+  });
+})
+</script>
+
+    </div>
+  </div>
+
+  <!-- Content -->
+<div class="container">
+  <div class="content">
+    <div class="headline">
+      <?php
     while ( have_posts() ) : the_post();
 
       get_template_part( 'template-parts/content', 'page' );
 
     endwhile; // End of the loop.
     ?>
-
-    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-  <div class="orbit-wrapper">
-    <div class="orbit-controls">
-      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
     </div>
-    <ul class="orbit-container">
-      <li class="is-active orbit-slide">
-        <figure class="orbit-figure">
-          <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
-          <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-        </figure>
-      </li>
-      <li class="orbit-slide">
-        <figure class="orbit-figure">
-          <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
-          <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-        </figure>
-      </li>
-      <li class="orbit-slide">
-        <figure class="orbit-figure">
-          <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
-          <figcaption class="orbit-caption">Encapsulating</figcaption>
-        </figure>
-      </li>
-      <li class="orbit-slide">
-        <figure class="orbit-figure">
-          <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
-          <figcaption class="orbit-caption">Outta This World</figcaption>
-        </figure>
-      </li>
-    </ul>
+    <div class="resp-container">
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+</div>
   </div>
-  <nav class="orbit-bullets">
-    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-  </nav>
 </div>
 
     </main><!-- #main -->

@@ -13,14 +13,18 @@
 
   </div><!-- #content -->
 
-  <footer id="colophon" class="site-footer">
-    <div class="site-info">
+  <footer id="colophon" class="footer">
+    <div class="copyright">
+    <p>© 2018, ParTea Booze Infusers.</p>
+  </div>
 
     </div><!-- .site-info -->
   </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="theme/js/scripts.js"></script>
 </body>
 </html>
