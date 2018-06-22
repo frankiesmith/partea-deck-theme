@@ -25,6 +25,5 @@
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="theme/js/scripts.js"></script>
 </body>
 </html>
