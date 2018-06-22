@@ -14,6 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Oswald:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet"
@@ -35,8 +36,28 @@
           'theme_location'  => 'main-navigation',
         ) );
       ?>
+
     </div>
     </nav><!-- #site-navigation -->
+
+              <div class="mobile-menu"><a class="dropdown-link">&#9776;</a>
+  <div class="menu-wrapper">
+<?php
+        wp_nav_menu( array(
+          'theme_location'  => 'main-navigation',
+        ) );
+      ?>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".mobile-menu").on('click', function() {
+    $(".menu-wrapper").toggleClass("open");
+  });
+});
+</script>
+</div><!-- #mobile-nav -->
+
   </header><!-- #masthead -->
   </div>
 
