@@ -113,8 +113,7 @@ header {
     .menu {
         ul {
             list-style-type: none;
-            background: #fff;
-            opacity: .8;
+            background: #a25486;
             padding: 0;
             min-width: 125px;
             z-index: 100;
@@ -122,14 +121,14 @@ header {
 
             li {
                 display: block;
-                line-height: 70px;
-                border-bottom: 2px solid #333;
+                line-height: 57px;
+                border-bottom: 2px solid #fff;
 
                 a {
                     display: block;
                     height: 100%;
                     width: 100%;
-                    color: #333;
+                    color: #fff;
                 }
             }
         }
@@ -214,7 +213,10 @@ header {
 .hero {
     width: 100%;
     height: 350px;
-    background-color: lightgray;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1270439/00ParTea%20Labels%20Black%20%7C%20Wooden%20Spoon%20Studio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer {
