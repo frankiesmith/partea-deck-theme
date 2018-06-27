@@ -106,7 +106,7 @@ header {
     background: none;
     display: none;
     position: absolute;
-    top: 175px;
+    top: 171px;
     text-align: center;
     width: 100%;
     z-index: 1000;
@@ -172,12 +172,25 @@ header {
 .slider-wrapper {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 550px;
+
+    @include breakpoint(medium only) {
+        height: 300px;
+    }
+
+
+    @include breakpoint(small only) {
+        height: 250px;
+    }
+
 
     .slider {
         height: 100%;
         width: 100%;
-        background-color: lightgray;
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1270439/jalepeno_gradient.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
         .arrow {
             position: absolute;
@@ -236,6 +249,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include breakpoint(small only) {
+        height: 200px;
+    }
 }
 
 .footer {
@@ -283,15 +300,50 @@ header {
 
 .swiper-slide {
     width: 400px;
-    height: 500px;
+    height: 400px;
     padding: 5px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 40px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 40px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 40px -6px rgba(0, 0, 0, 0.75);
+
+    @include breakpoint(small only) {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .swiper-content {
     width: 100%;
     height: 100%;
 }
+
+/* Temporary Slider Styles */
+/* 
+.slider iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.slider-wrapper {
+    height: 600px;
+}
+
+.slider {
+    height: 600px;
+}
+
+@media (max-width: 400px) {
+    .slider iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .slider-wrapper {
+        height: 200px;
+    }
+
+    .slider {
+        height: 200px;
+    }
+} */

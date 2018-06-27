@@ -45,9 +45,9 @@ get_header(); ?>
       <div class="swiper-content">
       </div>
   </div>
-  <!-- Add Pagination -->
-<!--  <div class="swiper-pagination"></div> -->
 </div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
