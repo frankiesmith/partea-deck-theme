@@ -15,7 +15,7 @@ get_header(); ?>
       <!-- Slider -->
   <div class="slider-wrapper">
     <div class="slider">
-      <?php 
+<?php 
 echo do_shortcode('[smartslider3 slider=3]');
 ?>
       <div class="arrow animated infinite pulse">
