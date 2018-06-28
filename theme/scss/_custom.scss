@@ -245,13 +245,20 @@ header {
 .hero {
     width: 100%;
     height: 350px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1270439/00ParTea%20Labels%20Black%20%7C%20Wooden%20Spoon%20Studio.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     @include breakpoint(small only) {
         height: 200px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
     }
 }
 
