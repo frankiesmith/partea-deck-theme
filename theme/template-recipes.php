@@ -59,7 +59,7 @@ get_header(); ?>
       <!--   Jalepeno Cards -->
 
       <div id="jalepeno" class="jalepeno swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" data-aos="fade-up">
           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
@@ -123,7 +123,7 @@ get_header(); ?>
       <!--   Orange spice Cards -->
 
       <div id="orange" class="orange swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" data-aos="fade-up">
           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
@@ -186,7 +186,7 @@ get_header(); ?>
       <!--   Ginger Cards -->
 
       <div id="ginger" class="ginger swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" data-aos="fade-up">
           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
@@ -250,7 +250,7 @@ get_header(); ?>
       <!--   Espresso Cards -->
 
       <div id="espresso" class="espresso swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" data-aos="fade-up">
           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
@@ -312,7 +312,7 @@ get_header(); ?>
       <!--   Wildberry Cards -->
 
       <div id="wildberry" class="wildberry swiper-container">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" data-aos="fade-up">
           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
@@ -371,6 +371,17 @@ get_header(); ?>
           </div>
         </div>
       </div>
+
+      <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+      <script>
+        $(document).ready(function() {
+          AOS.init({
+          duration: 1200,
+        })
+
+
+        });
+      </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
