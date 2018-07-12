@@ -31,16 +31,34 @@ get_header(); ?>
       </div>
 
 <div class="recipe-menu">
-  <span class="jalepeno"></span>
-  <span class="orange"></span>
-  <span class="ginger"></span>
-  <span class="espresso"></span>
-  <span class="wildberry"></span>
+  <a href="#jalepeno"><span class="jalepeno"></span></a>
+  <a href="#orange"><span class="orange"></span></a>
+  <a href="#ginger"><span class="ginger"></span></a>
+  <a href="#espresso"><span class="espresso"></span></a>
+  <a href="#wildberry"><span class="wildberry"></span></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function toggleRecipeMenu() {
+      if ($(this).scrollTop() > 300) {
+        $(".recipe-menu").fadeIn();
+      } else {
+        $(".recipe-menu").fadeOut();
+      }
+    }
+
+    $(window).scroll( toggleRecipeMenu );
+
+    $(toggleRecipeMenu);
+  </script>
+
 </div>
+
+
 
 <!--   Jalepeno Cards -->
 
-    <div class="jalepeno swiper-container">
+    <div id="jalepeno" class="jalepeno swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
@@ -69,7 +87,7 @@ get_header(); ?>
 
 <!--   Orange spice Cards -->
 
-    <div class="orange swiper-container">
+    <div id="orange" class="orange swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
@@ -98,7 +116,7 @@ get_header(); ?>
 
 <!--   Ginger Cards -->
 
-    <div class="ginger swiper-container">
+    <div id="ginger" class="ginger swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
@@ -127,7 +145,7 @@ get_header(); ?>
 
 <!--   Espresso Cards -->
 
-    <div class="espresso swiper-container">
+    <div id="espresso" class="espresso swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
@@ -156,7 +174,7 @@ get_header(); ?>
 
 <!--   Wildberry Cards -->
 
-    <div class="wildberry swiper-container">
+    <div id="wildberry" class="wildberry swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
