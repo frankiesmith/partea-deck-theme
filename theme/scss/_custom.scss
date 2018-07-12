@@ -285,19 +285,20 @@ header {
 
 /* Gallery Styles */
 
-#gallery-1 {
+#gallery-2 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    animation: fadeIn 3s;
 }
 
-.post-36 #gallery-1 .gallery-item {
+.post-36 #gallery-2 .gallery-item {
     width: 305px;
     padding: 30px;
 }
 
-#gallery-1 .gallery-item img {
+#gallery-2 .gallery-item img {
     min-height: 200px;
     width: auto;
     border: none;
@@ -379,6 +380,7 @@ header {
     padding-top: 100px;
     padding-bottom: 100px;
     border-bottom: 5px solid #c9c9c9;
+    animation: fadeIn 3s;
 }
 
 .swiper-slide {
