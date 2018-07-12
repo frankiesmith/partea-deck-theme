@@ -428,7 +428,8 @@ header {
     }
 
     .recipe-name {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
         margin-bottom: 8px;
     }
 }
@@ -469,6 +470,10 @@ header {
     .recipe-footer {
         background-color: $jalepeno;
     }
+
+    .recipe-name {
+        color: darken($jalepeno, 20%);
+    }
 }
 
 .orange {
@@ -488,6 +493,10 @@ header {
 
     .recipe-footer {
         background-color: $orange;
+    }
+
+    .recipe-name {
+        color: darken($orange, 20%);
     }
 }
 
@@ -509,6 +518,10 @@ header {
     .recipe-footer {
         background-color: $ginger;
     }
+
+    .recipe-name {
+        color: darken($ginger, 20%);
+    }
 }
 
 .espresso {
@@ -529,6 +542,10 @@ header {
     .recipe-footer {
         background-color: $espresso;
     }
+
+    .recipe-name {
+        color: darken($espresso, 20%);
+    }
 }
 
 .wildberry {
@@ -548,6 +565,10 @@ header {
 
     .recipe-footer {
         background-color: $wildberry;
+    }
+
+    .recipe-name {
+        color: darken($wildberry, 20%);
     }
 }
 
