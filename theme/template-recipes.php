@@ -31,11 +31,11 @@ get_header(); ?>
       </div>
 
       <div class="recipe-menu">
-        <a href="#jalepeno"><span class="jalepeno"></span></a>
-        <a href="#orange"><span class="orange"></span></a>
-        <a href="#ginger"><span class="ginger"></span></a>
-        <a href="#espresso"><span class="espresso"></span></a>
-        <a href="#wildberry"><span class="wildberry"></span></a>
+        <a href="#jalepeno" class="jalepeno"></a>
+        <a href="#orange" class="orange"></a>
+        <a href="#ginger" class="ginger"></a>
+        <a href="#espresso" class="espresso"></a>
+        <a href="#wildberry" class="wildberry"></a>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
