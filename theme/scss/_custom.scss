@@ -1,4 +1,8 @@
 $jalepeno: #B4D44F;
+$orange: #F79549;
+$ginger: #F3D531;
+$espresso: #C79B80;
+$wildberry: #D481B6;
 
 body {
     margin: 0;
@@ -430,10 +434,6 @@ header {
 }
 
 .recipe-icon {
-    background: url("/wp-content/uploads/2018/06/jalepeno.png");
-    background-size: contain;
-    background-color: #fff;
-    background-repeat: no-repeat;
     border: 15px solid #fff;
     width: 65px;
     height: 65px;
@@ -447,7 +447,6 @@ header {
 .recipe-footer {
     width: 100%;
     height: 30px;
-    background-color: $jalepeno;
     position: absolute;
     bottom: 0;
 }
@@ -458,6 +457,18 @@ header {
         background-size: cover;
         background-position: center;
     }
+
+    .recipe-icon {
+        background: url("/wp-content/uploads/2018/06/jalepeno.png");
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .recipe-footer {
+        background-color: $jalepeno;
+    }
 }
 
 .orange {
@@ -466,6 +477,18 @@ header {
         background-size: cover;
         background-position: top center;
     }
+
+    .recipe-icon {
+        background: url("/wp-content/uploads/2018/06/orange_spice.png");
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .recipe-footer {
+        background-color: $orange;
+    }
 }
 
 .ginger {
@@ -473,6 +496,58 @@ header {
         background: url("/wp-content/uploads/2018/07/ginger-background.jpg");
         background-size: cover;
         background-position: bottom;
+    }
+
+    .recipe-icon {
+        background: url("/wp-content/uploads/2018/06/ginger.png");
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .recipe-footer {
+        background-color: $ginger;
+    }
+}
+
+.espresso {
+    &.swiper-container {
+        background: url("/wp-content/uploads/2018/07/ginger-background.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .recipe-icon {
+        background: url("/wp-content/uploads/2018/06/espresso.png");
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .recipe-footer {
+        background-color: $espresso;
+    }
+}
+
+.wildberry {
+    &.swiper-container {
+        background: url("/wp-content/uploads/2018/07/ginger-background.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .recipe-icon {
+        background: url("/wp-content/uploads/2018/06/wildberry.png");
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+
+    .recipe-footer {
+        background-color: $wildberry;
     }
 }
 
