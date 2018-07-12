@@ -302,9 +302,10 @@ header {
 
 /* Recipe Cards */
 .swiper-container {
-    max-width: 1200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 5px solid #c9c9c9;
 }
 
 .swiper-slide {
@@ -380,6 +381,30 @@ header {
     background-color: $jalepeno;
     position: absolute;
     bottom: 0;
+}
+
+.jalepeno {
+    &.swiper-container {
+        background: url("/wp-content/uploads/2018/07/jalepeno-background-dark.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.orange {
+    &.swiper-container {
+        background: url("/wp-content/uploads/2018/07/orange-background-dark.jpg");
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
+.ginger {
+    &.swiper-container {
+        background: url("/wp-content/uploads/2018/07/ginger-background.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
 }
 
 /* Temporary Slider Styles */

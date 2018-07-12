@@ -7,7 +7,7 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
-    <div class="hero">
+<!--     <div class="hero">
       <?php
         $background_img = get_post_meta( get_the_ID(), '_partea_partea_header_image_id', true );
           printf(
@@ -17,7 +17,7 @@ get_header(); ?>
 
           echo "\n";
       ?>
-    </div>
+    </div> -->
     <div class="container">
 
     <?php
@@ -30,7 +30,17 @@ get_header(); ?>
 
       </div>
 
-    <div class="swiper-container">
+<div class="recipe-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!--   Jalepeno Cards -->
+
+    <div class="jalepeno swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="recipe-image">
@@ -55,9 +65,123 @@ get_header(); ?>
       </div>
   </div>
     </div>
-  <!-- Add Pagination -->
-<div class="swiper-pagination"></div>
-</div>
+    </div>
+
+<!--   Orange spice Cards -->
+
+    <div class="orange swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Margarita</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+    </div>
+    </div>
+
+<!--   Ginger Cards -->
+
+    <div class="ginger swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Margarita</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+    </div>
+    </div>
+
+<!--   Espresso Cards -->
+
+    <div class="espresso swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Margarita</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+    </div>
+    </div>
+
+<!--   Wildberry Cards -->
+
+    <div class="wildberry swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Margarita</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+        <div class="swiper-slide">
+      <div class="swiper-content">
+      </div>
+  </div>
+    </div>
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
@@ -83,8 +207,6 @@ $(document).ready(function() {
 });
 </script>
 
-
-    </div>
 
     </main><!-- #main -->
   </div><!-- #primary -->
