@@ -102,6 +102,21 @@ get_header(); ?>
             <div class="recipe-footer">
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Spicy Pineapple Mezcalita</li>
+              <li>1.5oz Jalapeno mezcal</li>
+              <li>1oz pineapple juice</li>
+              <li>0.75oz lime juice</li>
+              <li>0.5oz agave syrup</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -131,6 +146,20 @@ get_header(); ?>
               <li>1.5oz Jalapeno vodka</li>
               <li>0.5oz elderflower liqueur</li>
               <li>3oz pink grapefruit juice</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Spicy Bloody Mary</li>
+              <li>1.5oz Jalapeno vodka</li>
+              <li>4oz. tomato juice</li>
+              <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
               <div class="recipe-icon">
               </div>
             </ul>
