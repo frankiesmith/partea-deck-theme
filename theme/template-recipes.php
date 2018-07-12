@@ -128,10 +128,11 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Margarita</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>0.75oz fresh lime juice</li>
-              <li>0.75oz triple sec</li>
+              <li class="recipe-name">Spiced Sidecar</li>
+              <li>2oz Orange Spice brandy</li>
+              <li>1oz lemon juice</li>
+              <li>1oz simple syrup</li>
+              <li>Cinnamon sugar rim</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -142,10 +143,10 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy & Pink</li>
-              <li>1.5oz Jalapeno vodka</li>
-              <li>0.5oz elderflower liqueur</li>
-              <li>3oz pink grapefruit juice</li>
+              <li class="recipe-name">Spiced Toddy</li>
+              <li>1.5oz Orange Spice bourbon</li>
+              <li>1 tsp. honey</li>
+              <li>4oz hot water</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -156,10 +157,9 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Bloody Mary</li>
-              <li>1.5oz Jalapeno vodka</li>
-              <li>4oz. tomato juice</li>
-              <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
+              <li class="recipe-name">Spiced Old Fashioned</li>
+              <li>1.5oz Orange Spice whiskey</li>
+              <li>Muddle 1 sugar cube with 3-4 dashes bitters</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -170,10 +170,10 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Bloody Mary</li>
-              <li>1.5oz Jalapeno vodka</li>
-              <li>4oz. tomato juice</li>
-              <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
+              <li class="recipe-name">Spiced Sangria</li>
+              <li>1oz Orange Spice vodka</li>
+              <li>3oz dry white or red wine</li>
+              <li>3oz white or red cranberry juice</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -191,10 +191,11 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Margarita</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
+              <li class="recipe-name">Sparkling Ginger Lemonade</li>
+              <li>1.5oz Ginger vodka</li>
+              <li>0.75oz lemon juice</li>
+              <li>0.5oz simple syrup</li>
+              <li>2.5oz club soda</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -202,11 +203,45 @@ get_header(); ?>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Ginger Bee’s Knees</li>
+              <li>1.5oz Ginger gin</li>
+              <li>0.75oz lemon juice</li>
+              <li>0.5oz honey syrup</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">The Lean Irishman</li>
+              <li>1.5oz Ginger Irish whiskey</li>
+              <li>4oz club soda</li>
+              <li>Lemon or lime wedge</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Ginger Daly</li>
+              <li>1.5oz Ginger vodka</li>
+              <li>2oz lemonade</li>
+              <li>2oz iced tea </li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
         </div>
@@ -220,10 +255,10 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Margarita</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
+              <li class="recipe-name">Espresso Martini</li>
+              <li>2oz Espresso vodka</li>
+              <li>0.5oz simple syrup</li>
+              <li><strong>Optional:</strong> Splash Irish cream</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -231,11 +266,44 @@ get_header(); ?>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Coffee-Coco</li>
+              <li>1.5oz Espresso rum</li>
+              <li>3oz coconut water</li>
+              <li>1 Tbsp. cream of coconut</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Irish Iced Coffee</li>
+              <li>1.5oz Espresso Irish whiskey</li>
+              <li>1oz cream</li>
+              <li>0.5oz simple syrup</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Light Russian</li>
+              <li>1.5oz Espresso vodka</li>
+              <li>4oz. vanilla almond or soy milk</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
         </div>
@@ -249,10 +317,11 @@ get_header(); ?>
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
-              <li class="recipe-name">Spicy Margarita</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>1.5oz Jalapeno tequila</li>
+              <li class="recipe-name">Berry 75</li>
+              <li>1oz Wild Berry gin</li>
+              <li>0.5oz lemon juice</li>
+              <li>0.5oz simple syrup</li>
+              <li>Top with sparkling wine</li>
               <div class="recipe-icon">
               </div>
             </ul>
@@ -260,11 +329,44 @@ get_header(); ?>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Berry Daiquiri</li>
+              <li>1.5oz Wild Berry rum</li>
+              <li>0.75oz lime juice</li>
+              <li>0.5oz simple syrup</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="swiper-content">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">French Martini</li>
+              <li>2oz Wild Berry vodka</li>
+              <li>2oz pineapple juice</li>
+              <li>0.5oz simple syrup</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="recipe-image">
+            </div>
+            <ul class="swiper-content">
+              <li class="recipe-name">Berry Lemonade</li>
+              <li>1.5oz Wild Berry vodka</li>
+              <li>4oz lemonade</li>
+              <div class="recipe-icon">
+              </div>
+            </ul>
+            <div class="recipe-footer">
             </div>
           </div>
         </div>
