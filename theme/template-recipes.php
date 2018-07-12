@@ -31,11 +31,11 @@ get_header(); ?>
       </div>
 
 <div class="recipe-menu">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+  <span class="jalepeno"></span>
+  <span class="orange"></span>
+  <span class="ginger"></span>
+  <span class="espresso"></span>
+  <span class="wildberry"></span>
 </div>
 
 <!--   Jalepeno Cards -->
