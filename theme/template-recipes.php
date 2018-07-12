@@ -66,8 +66,8 @@ get_header(); ?>
       <ul class="swiper-content">
         <li class="recipe-name">Spicy Margarita</li>
         <li>1.5oz Jalapeno tequila</li>
-        <li>1.5oz Jalapeno tequila</li>
-        <li>1.5oz Jalapeno tequila</li>
+        <li>0.75oz fresh lime juice</li>
+        <li>0.75oz triple sec</li>
         <div class="recipe-icon">
         </div>
       </ul>
@@ -75,11 +75,31 @@ get_header(); ?>
       </div>
   </div>
         <div class="swiper-slide">
-      <div class="swiper-content">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy & Pink</li>
+        <li>1.5oz Jalapeno vodka</li>
+        <li>0.5oz elderflower liqueur</li>
+        <li>3oz pink grapefruit juice</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
       </div>
   </div>
         <div class="swiper-slide">
-      <div class="swiper-content">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Bloody Mary</li>
+        <li>1.5oz Jalapeno vodka</li>
+        <li>4oz. tomato juice</li>
+        <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
       </div>
   </div>
     </div>
@@ -95,8 +115,8 @@ get_header(); ?>
       <ul class="swiper-content">
         <li class="recipe-name">Spicy Margarita</li>
         <li>1.5oz Jalapeno tequila</li>
-        <li>1.5oz Jalapeno tequila</li>
-        <li>1.5oz Jalapeno tequila</li>
+        <li>0.75oz fresh lime juice</li>
+        <li>0.75oz triple sec</li>
         <div class="recipe-icon">
         </div>
       </ul>
@@ -104,11 +124,31 @@ get_header(); ?>
       </div>
   </div>
         <div class="swiper-slide">
-      <div class="swiper-content">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy & Pink</li>
+        <li>1.5oz Jalapeno vodka</li>
+        <li>0.5oz elderflower liqueur</li>
+        <li>3oz pink grapefruit juice</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
       </div>
   </div>
         <div class="swiper-slide">
-      <div class="swiper-content">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Bloody Mary</li>
+        <li>1.5oz Jalapeno vodka</li>
+        <li>4oz. tomato juice</li>
+        <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
       </div>
   </div>
     </div>
