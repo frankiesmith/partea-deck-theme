@@ -30,12 +30,20 @@ get_header(); ?>
 
       </div>
 
-    <div class="recipe-cards">
-      <!-- Swiper -->
-<div class="swiper-container">
+    <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <div class="swiper-content">
+      <div class="recipe-image">
+      </div>
+      <ul class="swiper-content">
+        <li class="recipe-name">Spicy Margarita</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <li>1.5oz Jalapeno tequila</li>
+        <div class="recipe-icon">
+        </div>
+      </ul>
+      <div class="recipe-footer">
       </div>
   </div>
         <div class="swiper-slide">
@@ -46,16 +54,8 @@ get_header(); ?>
       <div class="swiper-content">
       </div>
   </div>
-      <div class="swiper-slide">
-      <div class="swiper-content">
-      </div>
-  </div>
-      <div class="swiper-slide">
-      <div class="swiper-content">
-      </div>
-  </div>
-</div>
-<!-- Add Pagination -->
+    </div>
+  <!-- Add Pagination -->
 <div class="swiper-pagination"></div>
 </div>
 
