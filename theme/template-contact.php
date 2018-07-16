@@ -29,8 +29,15 @@ get_header(); ?>
     ?>
     </div>
     <div class="column">
-      <div class="contact-image">
-      </div>
+        <?php
+        $background_img = get_post_meta( get_the_ID(), '_partea_partea_contact_image_id', true );
+          printf(
+            '<div class="contact-image" style="background-image:url(%s);"></div>',
+            wp_get_attachment_image_url( $background_img, 'large' )
+          );
+
+          echo "\n";
+      ?>
     </div>
 
   </div>
