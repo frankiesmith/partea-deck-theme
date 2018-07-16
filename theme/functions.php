@@ -96,4 +96,42 @@ function partea_cmb2_metaboxes() {
   'preview_size' => 'large', // Image size to use when previewing in the admin.
 ) );
 
+    $cmb = new_cmb2_box( array(
+    'id'            => $prefix . 'contact_image_box',
+    'title'         => __( 'Contact Image', 'cmb2' ),
+    'object_types'  => array( 'page', ), // Post type
+    'context'       => 'normal',
+    'priority'      => 'high',
+    'show_names'    => true, // Show field names on the left
+    // 'cmb_styles' => false, // false to disable the CMB stylesheet
+    // 'closed'     => true, // Keep the metabox closed by default
+    'show_on' => array( 'key' => 'id', 'value' => array( 89 ) ), // Specific post IDs to display this metabox
+
+  ) );
+
+  $cmb->add_field( array(
+  'name'    => 'Image',
+  'desc'    => 'Upload an image.',
+  'id'      => $prefix . 'partea_contact_image',
+  'type'    => 'file',
+  // Optional:
+  'options' => array(
+    'url' => false, // Hide the text input for the url
+  ),
+  'text'    => array(
+    'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
+  ),
+  // query_args are passed to wp.media's library query.
+  'query_args' => array(
+    //'type' => 'application/pdf', // Make library only display PDFs.
+    // Or only allow gif, jpg, or png images
+    'type' => array(
+    'image/gif',
+    'image/jpeg',
+    'image/png',
+    ),
+  ),
+  'preview_size' => 'large', // Image size to use when previewing in the admin.
+) );
+
 }
