@@ -89,317 +89,134 @@ get_header(); ?>
         </div>
           
 
-<!--           <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spicy Margarita</li>
-              <li>1.5oz Jalapeno tequila</li>
-              <li>0.75oz fresh lime juice</li>
-              <li>0.75oz triple sec</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spicy & Pink</li>
-              <li>1.5oz Jalapeno vodka</li>
-              <li>0.5oz elderflower liqueur</li>
-              <li>3oz pink grapefruit juice</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spicy Bloody Mary</li>
-              <li>1.5oz Jalapeno vodka</li>
-              <li>4oz. tomato juice</li>
-              <li>Worcestershire sauce, horseradish, lemon and lime juice, celery salt, garlic powder</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spicy Pineapple Mezcalita</li>
-              <li>1.5oz Jalapeno mezcal</li>
-              <li>1oz pineapple juice</li>
-              <li>0.75oz lime juice</li>
-              <li>0.5oz agave syrup</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!--   Orange spice Cards -->
+ <!--   orange Cards -->
 
       <div id="orange" class="orange swiper-container">
         <div class="swiper-wrapper" data-aos="fade-up">
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spiced Sidecar</li>
-              <li>2oz Orange Spice brandy</li>
-              <li>1oz lemon juice</li>
-              <li>1oz simple syrup</li>
-              <li>Cinnamon sugar rim</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spiced Toddy</li>
-              <li>1.5oz Orange Spice bourbon</li>
-              <li>1 tsp. honey</li>
-              <li>4oz hot water</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spiced Old Fashioned</li>
-              <li>1.5oz Orange Spice whiskey</li>
-              <li>Muddle 1 sugar cube with 3-4 dashes bitters</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Spiced Sangria</li>
-              <li>1oz Orange Spice vodka</li>
-              <li>3oz dry white or red wine</li>
-              <li>3oz white or red cranberry juice</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!--   Ginger Cards -->
+<?php 
+
+  $orange_recipe_cards = get_post_meta( get_the_ID(), '_partea_recipe_content_orange', true );
+    foreach ( (array) $orange_recipe_cards as $key => $orange_recipe_card ) {
+      echo( '<div class="swiper-slide">');
+      printf( '<div class="recipe-image" style="background-image:url(%s);"></div>', 
+        wp_get_attachment_image_url( $orange_recipe_card['_partea_recipe_image_id'], 'large' ) );
+      echo( '<div class="swiper-content">');
+      printf( '<div class="recipe-name">%s</div>', esc_attr( $orange_recipe_card['_partea_recipe_name'] ) );
+      echo( '<ul class="recipe-content">');
+      printf( '<li>%s</li>', esc_attr( $orange_recipe_card['_partea_recipe_ingredient_one'] ) );
+      printf( '<li>%s</li>', esc_attr( $orange_recipe_card['_partea_recipe_ingredient_two'] ) );
+      printf( '<li>%s</li>', esc_attr( $orange_recipe_card['_partea_recipe_ingredient_three'] ) );
+      printf( '<li>%s</li>', esc_attr( $orange_recipe_card['_partea_recipe_ingredient_four'] ) );
+      echo '</ul>';
+
+      printf( '<div class="recipe-icon"></div>');
+
+      echo '</div>';
+      printf( '<div class="recipe-footer"></div>');
+      echo '</div>';
+}
+?>
+
+        </div>
+        </div>
+
+ <!--   ginger Cards -->
 
       <div id="ginger" class="ginger swiper-container">
         <div class="swiper-wrapper" data-aos="fade-up">
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Sparkling Ginger Lemonade</li>
-              <li>1.5oz Ginger vodka</li>
-              <li>0.75oz lemon juice</li>
-              <li>0.5oz simple syrup</li>
-              <li>2.5oz club soda</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Ginger Bee’s Knees</li>
-              <li>1.5oz Ginger gin</li>
-              <li>0.75oz lemon juice</li>
-              <li>0.5oz honey syrup</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">The Lean Irishman</li>
-              <li>1.5oz Ginger Irish whiskey</li>
-              <li>4oz club soda</li>
-              <li>Lemon or lime wedge</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Ginger Daly</li>
-              <li>1.5oz Ginger vodka</li>
-              <li>2oz lemonade</li>
-              <li>2oz iced tea </li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!--   Espresso Cards -->
+<?php 
+
+  $ginger_recipe_cards = get_post_meta( get_the_ID(), '_partea_recipe_content_ginger', true );
+    foreach ( (array) $ginger_recipe_cards as $key => $ginger_recipe_card ) {
+      echo( '<div class="swiper-slide">');
+      printf( '<div class="recipe-image" style="background-image:url(%s);"></div>', 
+        wp_get_attachment_image_url( $ginger_recipe_card['_partea_recipe_image_id'], 'large' ) );
+      echo( '<div class="swiper-content">');
+      printf( '<div class="recipe-name">%s</div>', esc_attr( $ginger_recipe_card['_partea_recipe_name'] ) );
+      echo( '<ul class="recipe-content">');
+      printf( '<li>%s</li>', esc_attr( $ginger_recipe_card['_partea_recipe_ingredient_one'] ) );
+      printf( '<li>%s</li>', esc_attr( $ginger_recipe_card['_partea_recipe_ingredient_two'] ) );
+      printf( '<li>%s</li>', esc_attr( $ginger_recipe_card['_partea_recipe_ingredient_three'] ) );
+      printf( '<li>%s</li>', esc_attr( $ginger_recipe_card['_partea_recipe_ingredient_four'] ) );
+      echo '</ul>';
+
+      printf( '<div class="recipe-icon"></div>');
+
+      echo '</div>';
+      printf( '<div class="recipe-footer"></div>');
+      echo '</div>';
+}
+?>
+
+        </div>
+        </div>
+
+ <!--   espresso Cards -->
 
       <div id="espresso" class="espresso swiper-container">
         <div class="swiper-wrapper" data-aos="fade-up">
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Espresso Martini</li>
-              <li>2oz Espresso vodka</li>
-              <li>0.5oz simple syrup</li>
-              <li><strong>Optional:</strong> Splash Irish cream</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Coffee-Coco</li>
-              <li>1.5oz Espresso rum</li>
-              <li>3oz coconut water</li>
-              <li>1 Tbsp. cream of coconut</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Irish Iced Coffee</li>
-              <li>1.5oz Espresso Irish whiskey</li>
-              <li>1oz cream</li>
-              <li>0.5oz simple syrup</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Light Russian</li>
-              <li>1.5oz Espresso vodka</li>
-              <li>4oz. vanilla almond or soy milk</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!--   Wildberry Cards -->
+<?php 
+
+  $espresso_recipe_cards = get_post_meta( get_the_ID(), '_partea_recipe_content_espresso', true );
+    foreach ( (array) $espresso_recipe_cards as $key => $espresso_recipe_card ) {
+      echo( '<div class="swiper-slide">');
+      printf( '<div class="recipe-image" style="background-image:url(%s);"></div>', 
+        wp_get_attachment_image_url( $espresso_recipe_card['_partea_recipe_image_id'], 'large' ) );
+      echo( '<div class="swiper-content">');
+      printf( '<div class="recipe-name">%s</div>', esc_attr( $espresso_recipe_card['_partea_recipe_name'] ) );
+      echo( '<ul class="recipe-content">');
+      printf( '<li>%s</li>', esc_attr( $espresso_recipe_card['_partea_recipe_ingredient_one'] ) );
+      printf( '<li>%s</li>', esc_attr( $espresso_recipe_card['_partea_recipe_ingredient_two'] ) );
+      printf( '<li>%s</li>', esc_attr( $espresso_recipe_card['_partea_recipe_ingredient_three'] ) );
+      printf( '<li>%s</li>', esc_attr( $espresso_recipe_card['_partea_recipe_ingredient_four'] ) );
+      echo '</ul>';
+
+      printf( '<div class="recipe-icon"></div>');
+
+      echo '</div>';
+      printf( '<div class="recipe-footer"></div>');
+      echo '</div>';
+}
+?>
+
+        </div>
+        </div>
+
+ <!--   wildberry Cards -->
 
       <div id="wildberry" class="wildberry swiper-container">
         <div class="swiper-wrapper" data-aos="fade-up">
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Berry 75</li>
-              <li>1oz Wild Berry gin</li>
-              <li>0.5oz lemon juice</li>
-              <li>0.5oz simple syrup</li>
-              <li>Top with sparkling wine</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Berry Daiquiri</li>
-              <li>1.5oz Wild Berry rum</li>
-              <li>0.75oz lime juice</li>
-              <li>0.5oz simple syrup</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">French Martini</li>
-              <li>2oz Wild Berry vodka</li>
-              <li>2oz pineapple juice</li>
-              <li>0.5oz simple syrup</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recipe-image">
-            </div>
-            <ul class="swiper-content">
-              <li class="recipe-name">Berry Lemonade</li>
-              <li>1.5oz Wild Berry vodka</li>
-              <li>4oz lemonade</li>
-              <div class="recipe-icon">
-              </div>
-            </ul>
-            <div class="recipe-footer">
-            </div>
-          </div>
+
+<?php 
+
+  $wildberry_recipe_cards = get_post_meta( get_the_ID(), '_partea_recipe_content_wildberry', true );
+    foreach ( (array) $wildberry_recipe_cards as $key => $wildberry_recipe_card ) {
+      echo( '<div class="swiper-slide">');
+      printf( '<div class="recipe-image" style="background-image:url(%s);"></div>', 
+        wp_get_attachment_image_url( $wildberry_recipe_card['_partea_recipe_image_id'], 'large' ) );
+      echo( '<div class="swiper-content">');
+      printf( '<div class="recipe-name">%s</div>', esc_attr( $wildberry_recipe_card['_partea_recipe_name'] ) );
+      echo( '<ul class="recipe-content">');
+      printf( '<li>%s</li>', esc_attr( $wildberry_recipe_card['_partea_recipe_ingredient_one'] ) );
+      printf( '<li>%s</li>', esc_attr( $wildberry_recipe_card['_partea_recipe_ingredient_two'] ) );
+      printf( '<li>%s</li>', esc_attr( $wildberry_recipe_card['_partea_recipe_ingredient_three'] ) );
+      printf( '<li>%s</li>', esc_attr( $wildberry_recipe_card['_partea_recipe_ingredient_four'] ) );
+      echo '</ul>';
+
+      printf( '<div class="recipe-icon"></div>');
+
+      echo '</div>';
+      printf( '<div class="recipe-footer"></div>');
+      echo '</div>';
+}
+?>
+
         </div>
-      </div>
+        </div>
+          
 
       <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
       <script>
