@@ -404,7 +404,7 @@ header {
 }
 
 .recipe-image {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1270439/Fresh-Lime-and-Jalapeno-Margarita-Fed-Fit-2.jpg);
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1270439/Fresh-Lime-and-Jalapeno-Margarita-Fed-Fit-2.jpg);*/
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -445,6 +445,12 @@ header {
     position: absolute;
     top: -38px;
     right: 20px;
+}
+
+.recipe-content {
+    padding: 0;
+    list-style: none;
+    margin: 0;
 }
 
 .recipe-footer {

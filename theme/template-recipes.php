@@ -60,7 +60,36 @@ get_header(); ?>
 
       <div id="jalepeno" class="jalepeno swiper-container">
         <div class="swiper-wrapper" data-aos="fade-up">
-          <div class="swiper-slide">
+
+<?php 
+
+  $jalepeno_recipe_cards = get_post_meta( get_the_ID(), '_partea_recipe_content_jalepeno', true );
+    foreach ( (array) $jalepeno_recipe_cards as $key => $jalepeno_recipe_card ) {
+      echo( '<div class="swiper-slide">');
+      printf( '<div class="recipe-image" style="background-image:url(%s);"></div>', 
+        wp_get_attachment_image_url( $jalepeno_recipe_card['_partea_recipe_image_id'], 'large' ) );
+      echo( '<div class="swiper-content">');
+      printf( '<div class="recipe-name">%s</div>', esc_attr( $jalepeno_recipe_card['_partea_recipe_name'] ) );
+      echo( '<ul class="recipe-content">');
+      printf( '<li>%s</li>', esc_attr( $jalepeno_recipe_card['_partea_recipe_ingredient_one'] ) );
+      printf( '<li>%s</li>', esc_attr( $jalepeno_recipe_card['_partea_recipe_ingredient_two'] ) );
+      printf( '<li>%s</li>', esc_attr( $jalepeno_recipe_card['_partea_recipe_ingredient_three'] ) );
+      printf( '<li>%s</li>', esc_attr( $jalepeno_recipe_card['_partea_recipe_ingredient_four'] ) );
+      echo '</ul>';
+
+      printf( '<div class="recipe-icon"></div>');
+
+      echo '</div>';
+      printf( '<div class="recipe-footer"></div>');
+      echo '</div>';
+}
+?>
+
+        </div>
+        </div>
+          
+
+<!--           <div class="swiper-slide">
             <div class="recipe-image">
             </div>
             <ul class="swiper-content">
@@ -118,7 +147,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!--   Orange spice Cards -->
 
