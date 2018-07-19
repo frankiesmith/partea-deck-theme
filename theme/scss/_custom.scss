@@ -645,6 +645,64 @@ header {
     }
 }
 
+/*Form Styles*/
+
+.nf-field-element input {
+    height: 40px !important;
+}
+
+.background {
+    background-color: lightgray;
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+span#nf-form-title-2 {
+    display: none;
+}
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.nf-field-container {
+    margin-bottom: 20px !important;
+}
+
+.label-above .nf-field-label {
+    margin-bottom: 5px;
+}
+
+input#nf-field-8 {
+    width: 130px;
+    background-color: $wildberry;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .4s all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($wildberry, 20%);
+        transition: .4s all;
+    }
+}
+
+@media (min-width: 630px) {
+    div#nf-field-9-container {
+        display: inline-block;
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    div#nf-field-5-container {
+        display: inline-block;
+        width: 50%;
+        padding-right: 10px;
+        float: left;
+    }
+}
+
 /* Temporary Slider Styles */
 
 /* 
