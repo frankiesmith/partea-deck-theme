@@ -20,17 +20,17 @@
 			<p>© 2018, ParTea Booze Infusers.</p>
 		</div>
 		<div class="social-icons">
-			<a href=" " target="_blank">
-				<?php echo file_get_contents( get_template_directory() . '/img/instagram.svg' ); ?>
+			<a href="https://twitter.com/ParTeaBooze" target="_blank">
+				<?php echo file_get_contents( get_template_directory() . '/img/twitter.svg' ); ?>
 			</a>
-			<a href=" " target="_blank">
+			<a href="https://www.facebook.com/parteabooze/" target="_blank">
 				<?php echo file_get_contents( get_template_directory() . '/img/facebook.svg' ); ?>
 			</a>
-			<a href=" " target="_blank">
+			<a href="https://www.pinterest.com/parteabooze/" target="_blank">
 				<?php echo file_get_contents( get_template_directory() . '/img/pinterest.svg' ); ?>
 			</a>
-			<a href=" " target="_blank">
-				<?php echo file_get_contents( get_template_directory() . '/img/twitter.svg' ); ?>
+			<a href="https://www.instagram.com/parteabooze/" target="_blank">
+				<?php echo file_get_contents( get_template_directory() . '/img/instagram.svg' ); ?>
 			</a>
 		</div>
 
