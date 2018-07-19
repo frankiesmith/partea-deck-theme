@@ -268,6 +268,8 @@ header {
     }
 }
 
+/* Footer */
+
 .footer {
     margin-top: 30px;
     width: 100%;
@@ -277,10 +279,44 @@ header {
     background-repeat: repeat-x;
     background-position: top;
 
+    .container {
+        position: relative;
+    }
+
     .copyright {
         padding-top: 34px;
         text-align: center;
         width: 100%;
+    }
+
+    .social-icons {
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+
+        @include breakpoint(small only) {
+            bottom: 0px;
+            top: -20px;
+            right: 0px;
+            left: 0px;
+            text-align: center;
+        }
+
+
+        svg {
+            width: 35px;
+            margin-left: 5px;
+
+            &:hover path {
+                fill: $wildberry;
+                transition: .4s all;
+            }
+
+            path {
+                fill: #333;
+                transition: .4s all;
+            }
+        }
     }
 }
 
@@ -364,8 +400,8 @@ header {
             background-repeat: no-repeat;
 
             @include breakpoint(small only) {
-                height: 60px;
-                width: 60px;
+                height: 70px;
+                width: 70px;
             }
 
 
@@ -374,8 +410,8 @@ header {
                 height: 95px;
 
                 @include breakpoint(small only) {
-                    height: 60px;
-                    width: 60px;
+                    height: 70px;
+                    width: 70px;
                 }
             }
         }
