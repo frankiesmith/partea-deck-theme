@@ -38,6 +38,11 @@ get_header(); ?>
 
           echo "\n";
       ?>
+
+      <div class="contact-info">
+        <p><strong>Phone:</strong><a href="tel:7818209819"> 781-820-9819</a><p>
+        <p><strong>Email:</strong><a href="mailto:info@infusethebooze.com"> info@infusethebooze.com</a><p>
+      </div>
     </div>
 
   </div>

@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: darken($jalepeno, 20%);
 }
 
 h1 {
@@ -618,6 +619,7 @@ header {
 .contact {
     &.container {
         display: flex;
+        margin-top: 20px;
 
         @include breakpoint(medium down) {
             flex-direction: column;
@@ -645,6 +647,21 @@ header {
     }
 }
 
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+
+    p {
+        margin: 10px;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 /*Form Styles*/
 
 .nf-field-element input {
@@ -655,6 +672,10 @@ header {
     background-color: lightgray;
     padding: 30px;
     padding-bottom: 5px;
+
+    @include breakpoint(medium down) {
+        margin-bottom: 20px;
+    }
 }
 
 span#nf-form-title-2 {
