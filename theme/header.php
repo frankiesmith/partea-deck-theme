@@ -59,7 +59,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          $(".mobile-menu").on('click', function() {
+          $(".dropdown-link").on('click', function() {
             $(".menu-wrapper").toggleClass("open");
           });
         });
