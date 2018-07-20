@@ -92,8 +92,10 @@ header {
             display: inline-block;
 
             a {
-                padding: 19px 18px 11px 18px;
+                padding: 19px 18px 13px 18px;
                 color: #333;
+                text-transform: uppercase;
+                font-size: 1rem;
                 transition: .4s all;
 
                 &:hover {
