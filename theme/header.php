@@ -48,7 +48,14 @@
     </nav>
     <!-- #site-navigation -->
 
-    <div class="mobile-menu"><a class="dropdown-link">&#9776;</a>
+    <div class="mobile-menu">
+      <div class="hamburger-wrapper">
+      <a class="hamburger-icon" href="#" title="Menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </a>
+      </div>
       <div class="menu-wrapper">
         <?php
         wp_nav_menu( array(
@@ -59,10 +66,18 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          $(".dropdown-link").on('click', function() {
+          $(".hamburger-icon").on('click', function() {
             $(".menu-wrapper").toggleClass("open");
           });
         });
+
+        $( document ).ready(function() {
+  var hamburger = $('.hamburger-icon');
+  hamburger.click(function() {
+     hamburger.toggleClass('active');
+     return false;
+  });
+});
       </script>
     </div>
     <!-- #mobile-nav -->
