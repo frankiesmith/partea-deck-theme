@@ -23,6 +23,14 @@ function partea_enqueue_scripts_styles() {
 
     wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css' );
 }
+
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/styles/style-login.css' );
+    wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/style-login.js' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+
 add_action( 'wp_enqueue_scripts', 'partea_enqueue_scripts_styles' );
 
 function partea_register_nav_menus() {

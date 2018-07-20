@@ -1,0 +1,37 @@
+/* Login Screen */
+body.login {
+    background-image: url("/wp-content/uploads/2018/07/jalepeno-background-dark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login h1 a {
+    background-image: url("/wp-content/uploads/2018/07/ParTea-Logo-ko@4x.png");
+    width: auto;
+    height: 115px;
+    background-size: 230px;
+}
+
+.login #backtoblog a, .login #nav a {
+    color: #fff;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover {
+    color: #B4D44F;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #B4D44F;
+    border-color: #B4D44F #B4D44F #B4D44F;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    transition: .4s all;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit:hover {
+    background-color: #D481B6;
+    border-color: #D481B6 #D481B6 #D481B6;
+    transition: .4s all;
+}
