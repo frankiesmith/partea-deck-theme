@@ -101,7 +101,7 @@ header {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $wildberry;
                     border-bottom: 3px solid $wildberry;
-                    border-top: 3px solid rgb(236, 245, 213)
+                    border-top: 3px solid rgb(236, 245, 213);
                     transition: .4s all;
                 }
             }
@@ -411,7 +411,7 @@ $translateX: 0;
 
 /* Gallery Styles */
 
-#gallery-2 {
+#gallery-1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -419,12 +419,12 @@ $translateX: 0;
     animation: fadeIn 3s;
 }
 
-.post-36 #gallery-2 .gallery-item {
+.post-36 #gallery-1 .gallery-item {
     width: 305px;
     padding: 30px;
 }
 
-#gallery-2 .gallery-item img {
+#gallery-1 .gallery-item img {
     min-height: 200px;
     width: auto;
     border: none;
@@ -811,15 +811,19 @@ span#nf-form-title-2 {
     display: none;
 }
 
-.nf-field-container {
+/* .nf-field-container {
     margin-bottom: 20px !important;
-}
+} */
 
 .label-above .nf-field-label {
     margin-bottom: 5px;
 }
 
-input#nf-field-8 {
+.nf-field-label label {
+    display: none;
+}
+
+input#nf-field-10 {
     width: 130px;
     background-color: $wildberry;
     color: #fff;
@@ -832,6 +836,27 @@ input#nf-field-8 {
         background-color: darken($wildberry, 20%);
         transition: .4s all;
     }
+}
+
+div#nf-field-5-container {
+    width: 100% !important;
+    padding-right: 0 !important;
+    height: 40px !important;
+}
+
+div#nf-field-9-container {
+    padding-left: 0 !important;
+    width: 100% !important;
+}
+
+.nf-field-element input, textarea#nf-field-9 {
+    font-size: .9rem;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+textarea#nf-field-9 {
+    padding-top: 5px;
 }
 
 @media (min-width: 630px) {
