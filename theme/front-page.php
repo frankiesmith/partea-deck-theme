@@ -15,6 +15,9 @@ get_header(); ?>
       <!-- Slider -->
       <div class="slider-wrapper">
         <div class="slider">
+          <?php 
+          echo do_shortcode('[smartslider3 slider=2]');
+          ?>
           <div class="arrow animated infinite pulse">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 161"><defs><style>.cls-1{fill:#fff}</style></defs><path class="cls-1" transform="rotate(135 170 81)" d="M81 57h177v51H81z"/><path class="cls-1" transform="rotate(45 82 81)" d="M-8 57h177v51H-8z"/></svg>
           </div>
