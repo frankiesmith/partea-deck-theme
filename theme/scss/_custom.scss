@@ -312,6 +312,11 @@ $translateX: 0;
             width: 50px;
             margin: auto;
 
+            @include breakpoint(small only) {
+                width: 25px;
+            }
+
+
             svg {
                 .cls-1 {
                     fill: #fff;
