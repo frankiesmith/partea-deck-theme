@@ -160,37 +160,53 @@ header {
     .current-menu-item {
         &.menu-item-164 {
             a {
-                background-color: rgba(255, 255, 255, 0.75);
-                color: $orange;
-                border-bottom: 3px solid $orange;
-                border-top: 3px solid rgb(236, 245, 213);
+                color: #fff;
+                border-bottom: 3px solid darken($orange, 20%);
+                border-top: 3px solid $jalepeno;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+
+                &:hover {
+                    text-shadow: none;
+                }
             }
         }
 
         &.menu-item-168 {
             a {
-                background-color: rgba(255, 255, 255, 0.75);
-                color: darken($ginger, 20%);
+                color: #fff;
                 border-bottom: 3px solid darken($ginger, 20%);
-                border-top: 3px solid rgb(236, 245, 213);
+                border-top: 3px solid $jalepeno;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+
+                &:hover {
+                    text-shadow: none;
+                }
             }
         }
 
         &.menu-item-170 {
             a {
-                background-color: rgba(255, 255, 255, 0.75);
-                color: $espresso;
-                border-bottom: 3px solid $espresso;
-                border-top: 3px solid rgb(236, 245, 213);
+                color: #fff;
+                border-bottom: 3px solid darken($espresso, 20%);
+                border-top: 3px solid $jalepeno;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+
+                &:hover {
+                    text-shadow: none;
+                }
             }
         }
 
         &.menu-item-171 {
             a {
-                background-color: rgba(255, 255, 255, 0.75);
-                color: $wildberry;
-                border-bottom: 3px solid $wildberry;
-                border-top: 3px solid rgb(236, 245, 213);
+                color: #fff;
+                border-bottom: 3px solid darken($wildberry, 20%);
+                border-top: 3px solid $jalepeno;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+
+                &:hover {
+                    text-shadow: none;
+                }
             }
         }
     }
