@@ -107,9 +107,12 @@ header {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $orange;
-                    border-bottom: 3px solid $orange;
-                    border-top: 3px solid rgb(236, 245, 213);
                     transition: .4s all;
+                    transition-delay: .2s;
+                }
+
+                &:before {
+                    background: $orange;
                 }
             }
 
@@ -117,9 +120,12 @@ header {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: darken($ginger, 20%);
-                    border-bottom: 3px solid darken($ginger, 20%);
-                    border-top: 3px solid rgb(236, 245, 213);
                     transition: .4s all;
+                    transition-delay: .2s;
+                }
+
+                &:before {
+                    background: darken($ginger, 20%);
                 }
             }
 
@@ -127,9 +133,12 @@ header {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $espresso;
-                    border-bottom: 3px solid $espresso;
-                    border-top: 3px solid rgb(236, 245, 213);
                     transition: .4s all;
+                    transition-delay: .2s;
+                }
+
+                &:before {
+                    background: $espresso;
                 }
             }
 
@@ -137,9 +146,12 @@ header {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $wildberry;
-                    border-bottom: 3px solid $wildberry;
-                    border-top: 3px solid rgb(236, 245, 213);
                     transition: .4s all;
+                    transition-delay: .2s;
+                }
+
+                &:before {
+                    background: $wildberry;
                 }
             }
 
@@ -151,8 +163,45 @@ header {
                 transition: .4s all;
                 display: flex;
                 padding: 10px 20px;
-                border-top: 3px solid $jalepeno;
-                border-bottom: 3px solid $jalepeno;
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                position: relative;
+                overflow: hidden;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 51%;
+                    right: 51%;
+                    bottom: 0;
+                    background: #2098D1;
+                    height: 4px;
+                    -webkit-transition-property: left, right;
+                    transition-property: left, right;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-timing-function: ease-out;
+                    transition-timing-function: ease-out;
+                }
+
+                &:hover:before {
+                    left: 0;
+                    right: 0;
+                }
+
+                &:focus:before {
+                    left: 0;
+                    right: 0;
+                }
+
+                &:active:before {
+                    left: 0;
+                    right: 0;
+                }
             }
         }
     }
@@ -161,12 +210,14 @@ header {
         &.menu-item-164 {
             a {
                 color: #fff;
-                border-bottom: 3px solid darken($orange, 20%);
-                border-top: 3px solid $jalepeno;
                 text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 
                 &:hover {
                     text-shadow: none;
+                }
+
+                &:before {
+                    background: $orange;
                 }
             }
         }
@@ -174,8 +225,6 @@ header {
         &.menu-item-168 {
             a {
                 color: #fff;
-                border-bottom: 3px solid darken($ginger, 20%);
-                border-top: 3px solid $jalepeno;
                 text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 
                 &:hover {
@@ -187,8 +236,6 @@ header {
         &.menu-item-170 {
             a {
                 color: #fff;
-                border-bottom: 3px solid darken($espresso, 20%);
-                border-top: 3px solid $jalepeno;
                 text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 
                 &:hover {
@@ -200,8 +247,6 @@ header {
         &.menu-item-171 {
             a {
                 color: #fff;
-                border-bottom: 3px solid darken($wildberry, 20%);
-                border-top: 3px solid $jalepeno;
                 text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 
                 &:hover {
