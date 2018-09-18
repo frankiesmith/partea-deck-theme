@@ -51,6 +51,97 @@ function partea_cmb2_metaboxes() {
   'preview_size' => 'large', // Image size to use when previewing in the admin.
 ) );
 
+
+  //Homepage CMB2
+
+  $featured_products_box = new_cmb2_box( array(
+    "id"            => $prefix . 'featured_products_box',
+    "title"         => __( 'Featured Products', 'cmb2' ),
+    "object_types"  => array( "page" ), // Post type
+    "context"       => "normal",
+    "priority"      => "high",
+    "show_names"    => true, // Show field names on the left
+    "show_on"    => array( 'key' => 'front-page', 'value' => '' ),
+    "repeatable"  => true,
+  ) );
+
+  $featured_products_group_id = $featured_products_box->add_field( array(
+      'id'   => $prefix . 'featured_products',
+      'type' => 'group',
+      'options'     => array(
+      'group_title'   => __( 'Product {#}', 'cmb2' ),
+      'add_button'    => __( 'Add Another Product', 'cmb2' ),
+      'remove_button' => __( 'Remove Product', 'cmb2' ),
+      'sortable'      => true,
+      ),
+    ) );
+
+  $featured_products_box->add_group_field( $featured_products_group_id, array(
+	'name' => 'Product Code',
+	'desc' => 'Paste the Shopify "Buy Button" embed code  here.',
+	//'default' => 'standard value (optional)',
+	'id' => 'shopify_buy_button_code',
+	'type' => 'textarea_code'
+    ) );
+
+
+  //Recipes CMB2
+
+  $recipe_box_jalepeno = new_cmb2_box( array(
+    "id"            => $prefix . 'recipe_box_jalepeno',
+    "title"         => __( 'Jalepeno', 'cmb2' ),
+    "object_types"  => array( "page" ), // Post type
+    "context"       => "normal",
+    "priority"      => "high",
+    "show_names"    => true, // Show field names on the left
+    "show_on"    => array( 'key' => 'page-template', 'value' => 'template-recipes.php' ),
+    "repeatable"  => true,
+  ) );
+
+  $recipe_jalepeno_group_id = $recipe_box_jalepeno->add_field( array(
+      'id'   => $prefix . 'recipe_content_jalepeno',
+      'type' => 'group',
+      'options'     => array(
+      'group_title'   => __( 'Recipe {#}', 'cmb2' ),
+      'add_button'    => __( 'Add Another Recipe', 'cmb2' ),
+      'remove_button' => __( 'Remove Recipe', 'cmb2' ),
+      'sortable'      => true,
+      ),
+    ) );
+
+  $recipe_box_jalepeno->add_group_field( $recipe_jalepeno_group_id, array(
+      'name' => 'Recipe Name',
+      'id'   => $prefix . 'recipe_name',
+      'type' => 'text',
+    ) );
+
+  $recipe_box_jalepeno->add_group_field( $recipe_jalepeno_group_id, array(
+      'name'    => 'Recipe Image',
+      'desc'    => 'Upload an image',
+      'id'      => $prefix . 'recipe_image',
+      'type'    => 'file',
+      // Optional:
+      'options' => array(
+        'url' => false, // Hide the text input for the url
+      ),
+      'text'    => array(
+        'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
+      ),
+      // query_args are passed to wp.media's library query.
+      'query_args' => array(
+        // 'type' => 'application/pdf', // Make library only display PDFs.
+        // Or only allow gif, jpg, or png images
+        'type' => array(
+        'image/gif',
+        'image/jpeg',
+        'image/png',
+        ),
+      ),
+      'preview_size' => 'medium', // Image size to use when previewing in the admin.
+    ) );
+
+  //Contact Page CMB2
+
     $cmb = new_cmb2_box( array(
     'id'            => $prefix . 'contact_image_box',
     'title'         => __( 'Contact Image', 'cmb2' ),
