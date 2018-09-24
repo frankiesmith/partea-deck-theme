@@ -32,6 +32,14 @@ h2 {
     }
 }
 
+.headline {
+    text-align: center;
+}
+
+.section {
+    margin: 30px 0;
+}
+
 .asterisk {
     font-size: .8rem;
 }
@@ -505,6 +513,43 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
         height: 100%;
         background-size: cover;
         background-position: center;
+    }
+}
+
+/* Instagram Styles */
+
+.insta-header {
+    text-align: center;
+}
+
+/* Featured Products */
+.featured-products {
+    .widget-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .widgettitle {
+            display: none;
+        }
+    }
+
+    .featured-item {
+        margin: 30px;
+        padding: 20px;
+        background: #fff;
+    }
+
+    .products-wrapper {
+        background: url("/wp-content/uploads/2018/07/orange-background-dark.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        img {
+            width: 80%;
+        }
     }
 }
 

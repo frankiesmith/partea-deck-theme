@@ -54,7 +54,7 @@ function partea_cmb2_metaboxes() {
 
   //Homepage CMB2
 
-  $featured_products_box = new_cmb2_box( array(
+$featured_products_box = new_cmb2_box( array(
     "id"            => $prefix . 'featured_products_box',
     "title"         => __( 'Featured Products', 'cmb2' ),
     "object_types"  => array( "page" ), // Post type
@@ -79,10 +79,29 @@ function partea_cmb2_metaboxes() {
   $featured_products_box->add_group_field( $featured_products_group_id, array(
 	'name' => 'Product Code',
 	'desc' => 'Paste the Shopify "Buy Button" embed code  here.',
-	//'default' => 'standard value (optional)',
-	'id' => 'shopify_buy_button_code',
-	'type' => 'textarea_code'
-    ) );
+	'id' => $prefix . 'shopify_buy_button_code',
+	'type'    => 'wysiwyg',
+  'options' => array(),
+) );
+
+/*  $featured_products_box = new_cmb2_box( array(
+    "id"            => $prefix . 'featured_products_box',
+    "title"         => __( 'Featured Products', 'cmb2' ),
+    "object_types"  => array( "page" ), // Post type
+    "context"       => "normal",
+    "priority"      => "high",
+    "show_names"    => true, // Show field names on the left
+    "show_on"    => array( 'key' => 'front-page', 'value' => '' ),
+    "repeatable"  => true,
+  ) );
+
+  $featured_products_box->add_field( array(
+  'name' => 'Product Code',
+  'desc' => 'Paste the Shopify "Buy Button" embed code  here.',
+  'id' => $prefix . 'shopify_buy_button_code',
+  'type'    => 'wysiwyg',
+  'options' => array(),
+) );*/
 
 
   //Recipes CMB2
