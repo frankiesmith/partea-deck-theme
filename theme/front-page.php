@@ -65,7 +65,9 @@ get_header(); ?>
   </div>
   <div class="products-wrapper">
   <div class="container">
-<?php get_sidebar(); ?> 
+<?php 
+echo do_shortcode('[wps_products collections="Home Page" limit="3" add-to-cart="true"]');
+?>
 </div>      
 </div>
 </div>
