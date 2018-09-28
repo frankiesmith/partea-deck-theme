@@ -22,7 +22,7 @@ function partea_enqueue_scripts_styles() {
   wp_enqueue_script( 'foundation-kitchen-sink', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js', array('jquery'), '6.4.3', true );
   wp_add_inline_script( 'foundation-kitchen-sink', '(function($){$(document).foundation();})(jQuery);', 'after' );
 
-    wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css' );
+    wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css', filemtime(get_stylesheet_directory() . '/theme.css') );
 }
 
 function my_login_stylesheet() {
