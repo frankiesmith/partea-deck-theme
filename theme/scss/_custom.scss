@@ -37,7 +37,16 @@ h2 {
 }
 
 .section {
-    margin: 30px 0;
+    margin: 70px 0;
+
+    @include breakpoint(medium only) {
+        margin: 50px 0;
+    }
+
+
+    @include breakpoint(small only) {
+        margin: 30px 0;
+    }
 }
 
 .asterisk {
@@ -67,7 +76,7 @@ h2 {
 }
 
 header {
-    position: static;
+    position: relative;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -262,6 +271,24 @@ header {
                 }
             }
         }
+    }
+}
+
+.wps-btn-cart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.wps-cart-counter {
+    background-color: $wildberry;
+}
+
+.wps-btn, .wps-btn:focus {
+    background-color: $orange;
+
+    &:hover {
+        background-color: darken($orange, 20%);
     }
 }
 
@@ -466,7 +493,6 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 0 20px;
 
     .content {
         text-align: center;
@@ -563,12 +589,20 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
         width: 65%;
 
         @include breakpoint(small only) {
-            width: 100%;
+            width: 50%;
         }
     }
 
     .wps-btn-secondary.wps-add-to-cart {
-        background: $jalepeno;
+        background: $wildberry;
+
+        &:hover {
+            background-color: darken($wildberry, 20%);
+        }
+    }
+
+    .wps-product-item .wps-product-link {
+        padding-top: 20px;
     }
 
     .wps-product-quantity-wrapper {
@@ -585,6 +619,7 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 
     .wps-collections-title, .wps-products-title {
         margin-top: 15px;
+        color: #333;
     }
 
     .wps-col-3, .wps-col-3:nth-child(1n+1), .wps-col-3:nth-child(2n+2), .wps-col-3:nth-child(3n+3), .wps-col-3:nth-child(4n+4), .wps-col-3:nth-child(5n+5), .wps-col-3:nth-child(6n+6), .wps-col-3:nth-child(7n+7), .wps-col-3:nth-child(8n+8), .wps-col-3:nth-child(9n+9), .wps-col-3:nth-child(10n+10), .wps-col-3:nth-child(11n+12), .wps-col-3:nth-child(12n+12) {
@@ -608,7 +643,7 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 
     .wps-product-meta.wps-fadeIn {
         @include breakpoint(small only) {
-            margin-bottom: -13px;
+            margin-bottom: -15px;
         }
     }
 }
