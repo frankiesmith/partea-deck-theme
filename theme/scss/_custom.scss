@@ -16,8 +16,9 @@ a {
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin: 15px 0px;
+    text-transform: uppercase;
 
     @include breakpoint(small only) {
         font-size: 2rem;
