@@ -525,16 +525,23 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 /* Featured Products */
 
 .home {
+    .wps-product-item {
+        background: #fff;
+    }
+
     .wps-box {
         width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #fff;
+        justify-content: flex-end;
 
         @include breakpoint(small only) {
             margin-bottom: 30px;
         }
 
-
-        margin: auto;
-        display: inline-block;
 
         @include breakpoint(small only) {
             width: 100%;
@@ -544,10 +551,8 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
     .wps-row {
         text-align: center;
         display: flex;
-        align-items: flex-end;
+        align-items: stretch;
         justify-content: space-between;
-        background: #fff;
-        padding: 10px;
 
         @include breakpoint(medium down) {
             display: block;
@@ -555,7 +560,7 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
     }
 
     .wps-products-img {
-        width: 80%;
+        width: 65%;
 
         @include breakpoint(small only) {
             width: 100%;
@@ -588,12 +593,35 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 
         @include breakpoint(medium only) {
             display: inline-block;
-            width: 30%;
+            width: 29%;
+            margin: 10px;
         }
     }
 
     .wps-product-item .wps-product-meta .wps-notice-inline {
         display: none;
+    }
+
+    .wps-products-header.wps-contain.wps-row {
+        display: none;
+    }
+
+    .wps-product-meta.wps-fadeIn {
+        @include breakpoint(small only) {
+            margin-bottom: -13px;
+        }
+    }
+}
+
+@media (max-width: 1030px) and (min-width: 800px) {
+    .home .wps-box {
+        height: 380px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 640px) {
+    .home .wps-box {
+        height: 340px;
     }
 }
 
@@ -604,8 +632,6 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 
     .container {
         padding: 30px 0;
-        border-top: 1px solid $jalepeno;
-        border-bottom: 1px solid $jalepeno;
     }
 }
 
