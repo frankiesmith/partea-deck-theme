@@ -22,22 +22,6 @@ get_header(); ?>
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 161"><defs><style>.cls-1{fill:#fff}</style></defs><path class="cls-1" transform="rotate(135 170 81)" d="M81 57h177v51H81z"/><path class="cls-1" transform="rotate(45 82 81)" d="M-8 57h177v51H-8z"/></svg>
           </div>
 
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script>
-            $(function() {
-
-              jQuery.fn.autoscroll = function(selector) {
-                $('html, body').animate({
-                  scrollTop: $(this).offset().top
-                }, 900);
-              }
-
-              $('.arrow').on('click', function() {
-                $('.content').autoscroll();
-              });
-            })
-          </script>
-
         </div>
       </div>
 

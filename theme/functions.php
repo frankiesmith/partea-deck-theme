@@ -32,6 +32,8 @@ function partea_enqueue_scripts_styles() {
 
     wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css', filemtime(get_stylesheet_directory() . '/theme.css') );
 
+    wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/js/theme.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/theme.js'), true );
+
 }
 
 function my_login_stylesheet() {

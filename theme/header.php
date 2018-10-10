@@ -17,6 +17,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <?php wp_head(); ?>
   </head>
 
@@ -56,22 +57,6 @@
         ) );
       ?>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script>
-        $(document).ready(function() {
-          $(".hamburger-icon").on('click', function() {
-            $(".menu-wrapper").toggleClass("open");
-          });
-        });
-
-        $( document ).ready(function() {
-  var hamburger = $('.hamburger-icon');
-  hamburger.click(function() {
-     hamburger.toggleClass('active');
-     return false;
-  });
-});
-      </script>
     </div>
     <!-- #mobile-nav -->
 
