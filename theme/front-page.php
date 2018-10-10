@@ -45,7 +45,7 @@ get_header(); ?>
       <div class="container">
         <div class="content">
           <div class="headline">
-    <?php
+            <?php
     while ( have_posts() ) : the_post();
 
       get_template_part( 'template-parts/content', get_post_type() );
@@ -56,31 +56,33 @@ get_header(); ?>
           <div class="resp-container">
             <iframe class="resp-iframe" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
           </div>
-                  </div>
+        </div>
       </div>
 
-<div class="featured-products section">
-  <div class="headline">
-    <h1>Featured Products</h1>
-  </div>
-  <div class="products-wrapper">
-  <div class="container">
-<?php 
+      <div class="featured-products section">
+        <!--   <div class="circle-background">
+  </div> -->
+        <div class="headline">
+          <h1>Featured Products</h1>
+        </div>
+        <div class="products-wrapper">
+          <div class="container">
+            <?php 
 echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
 ?>
-</div>      
-</div>
-</div>
-<div class="container">
-<div class="instagram-feed">
-  <div class="insta-header">
-    <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
-  </div>
-  <?php 
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="instagram-feed">
+          <div class="insta-header">
+            <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
+          </div>
+          <?php 
           echo do_shortcode('[instagram-feed]');
           ?>
-  </div>
-</div>
+        </div>
+      </div>
 
     </main>
     <!-- #main -->
