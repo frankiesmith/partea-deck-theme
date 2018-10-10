@@ -43,7 +43,7 @@ get_header(); ?>
 
       <!-- Content -->
       <div class="container">
-        <div class="content">
+        <div class="content section">
           <div class="headline">
             <?php
     while ( have_posts() ) : the_post();
@@ -71,7 +71,7 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
           </div>
         </div>
       </div>
-        <div class="instagram-feed">
+        <div class="instagram-feed section">
           <div class="insta-header">
             <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
           </div>
