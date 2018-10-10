@@ -22,7 +22,16 @@ function partea_enqueue_scripts_styles() {
   wp_enqueue_script( 'foundation-kitchen-sink', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js', array('jquery'), '6.4.3', true );
   wp_add_inline_script( 'foundation-kitchen-sink', '(function($){$(document).foundation();})(jQuery);', 'after' );
 
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700|Oswald:700' );
+
+    wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
+
+    wp_enqueue_style( 'swiper-css', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css' );
+
+    wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@2.3.0/dist/aos.css' );
+
     wp_enqueue_style( 'fivehdstarter', get_stylesheet_directory_uri() . '/theme.css', filemtime(get_stylesheet_directory() . '/theme.css') );
+
 }
 
 function my_login_stylesheet() {
