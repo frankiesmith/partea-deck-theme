@@ -59,7 +59,7 @@ get_header(); ?>
       <!--   Jalepeno Cards -->
 
       <div id="jalepeno" class="jalepeno swiper-container">
-        <div class="swiper-wrapper fade-in">
+        <div class="swiper-wrapper">
 
 <?php 
 
@@ -92,7 +92,7 @@ get_header(); ?>
  <!--   orange Cards -->
 
       <div id="orange" class="orange swiper-container">
-        <div class="swiper-wrapper fade-in">
+        <div class="swiper-wrapper">
 
 <?php 
 
@@ -124,7 +124,7 @@ get_header(); ?>
  <!--   ginger Cards -->
 
       <div id="ginger" class="ginger swiper-container">
-        <div class="swiper-wrapper fade-in">
+        <div class="swiper-wrapper">
 
 <?php 
 
@@ -156,7 +156,7 @@ get_header(); ?>
  <!--   espresso Cards -->
 
       <div id="espresso" class="espresso swiper-container">
-        <div class="swiper-wrapper fade-in">
+        <div class="swiper-wrapper">
 
 <?php 
 
@@ -188,7 +188,7 @@ get_header(); ?>
  <!--   wildberry Cards -->
 
       <div id="wildberry" class="wildberry swiper-container">
-        <div class="swiper-wrapper fade-in">
+        <div class="swiper-wrapper">
 
 <?php 
 
@@ -225,8 +225,8 @@ get_header(); ?>
           duration: 1200,
         })
 
-
         });
+
       </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

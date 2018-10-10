@@ -28,7 +28,7 @@ get_header(); ?>
       <!-- Content -->
       <div class="container">
         <div class="content section">
-          <div class="headline zoom">
+                    <div class="headline zoom">
             <?php
     while ( have_posts() ) : the_post();
 
@@ -36,6 +36,11 @@ get_header(); ?>
 
     endwhile; // End of the loop.
     ?>
+          </div>
+        </div>
+        <div class="content section">
+          <div class="headline zoom">
+        <h1>How It Works</h1>
           </div>
           <div class="resp-container">
             <iframe class="resp-iframe slideUp" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -47,7 +52,7 @@ get_header(); ?>
         <div class="headline zoom">
           <h1>Featured Products</h1>
         </div>
-        <div class="products-wrapper">
+        <div class="products-wrapper fade-in">
           <div class="container slideUp">
             <?php 
 echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
