@@ -50,7 +50,7 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
     jQuery('.zoom').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated zoomIn',
+        classToAdd: 'visible animated fadeIn zoomIn',
         offset: 100
        });
 });
