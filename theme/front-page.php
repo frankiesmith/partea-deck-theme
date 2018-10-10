@@ -71,7 +71,6 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
           </div>
         </div>
       </div>
-      <div class="container">
         <div class="instagram-feed">
           <div class="insta-header">
             <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
@@ -80,8 +79,6 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
           echo do_shortcode('[instagram-feed]');
           ?>
         </div>
-      </div>
-
     </main>
     <!-- #main -->
   </div>
