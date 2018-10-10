@@ -34,6 +34,8 @@ function partea_enqueue_scripts_styles() {
 
     wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/js/theme.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/theme.js'), true );
 
+    wp_enqueue_script( 'viewportchecker', get_template_directory_uri() . '/js/viewportchecker.js', array('jquery'), filemtime(get_stylesheet_directory() . '/js/viewportchecker.js'), true );
+
 }
 
 function my_login_stylesheet() {

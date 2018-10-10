@@ -24,3 +24,54 @@ jQuery(document).ready(function() {
         return false;
     });
 });
+
+/*Viewport Animations*/
+
+jQuery(document).ready(function() {
+    jQuery('.slide-big').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUpBig',
+        offset: 200
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.wps-product-item').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.slideUp').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.zoom').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated zoomIn',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.fade-in-right').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInRight',
+        offset: 100
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.fade-in').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 400
+       });
+});
+
+jQuery(document).ready(function() {
+    jQuery('.flip-in').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated flipInX',
+        offset: 400
+       });
+});

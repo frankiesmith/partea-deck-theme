@@ -28,7 +28,7 @@ get_header(); ?>
       <!-- Content -->
       <div class="container">
         <div class="content section">
-          <div class="headline">
+          <div class="headline zoom">
             <?php
     while ( have_posts() ) : the_post();
 
@@ -38,25 +38,25 @@ get_header(); ?>
     ?>
           </div>
           <div class="resp-container">
-            <iframe class="resp-iframe" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <iframe class="resp-iframe slideUp" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
       <div class="featured-products section">
-        <div class="headline">
+        <div class="headline zoom">
           <h1>Featured Products</h1>
         </div>
         <div class="products-wrapper">
-          <div class="container">
+          <div class="container slideUp">
             <?php 
 echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
 ?>
           </div>
         </div>
       </div>
-        <div class="instagram-feed section">
-          <div class="insta-header">
+        <div class="instagram-feed section fade-in-right">
+          <div class="insta-header zoom">
             <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
           </div>
           <?php 
