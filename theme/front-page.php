@@ -60,8 +60,6 @@ get_header(); ?>
       </div>
 
       <div class="featured-products section">
-        <!--   <div class="circle-background">
-  </div> -->
         <div class="headline">
           <h1>Featured Products</h1>
         </div>
