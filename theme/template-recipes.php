@@ -216,18 +216,6 @@ get_header(); ?>
 
         </div>
         </div>
-          
-
-      <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-      <script>
-        $(document).ready(function() {
-          AOS.init({
-          duration: 1200,
-        })
-
-
-        });
-      </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>

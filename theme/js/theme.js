@@ -1,6 +1,6 @@
 jQuery(function() {
 
-jQuery.fn.autoscroll = function(selector) {
+    jQuery.fn.autoscroll = function(selector) {
         jQuery('html, body').animate({
             scrollTop: jQuery(this).offset().top
         }, 900);
@@ -24,3 +24,15 @@ jQuery(document).ready(function() {
         return false;
     });
 });
+
+function toggleRecipeMenu() {
+    if ($(this).scrollTop() > 300) {
+        $(".recipe-menu").fadeIn();
+    } else {
+        $(".recipe-menu").fadeOut();
+    }
+}
+
+$(window).scroll(toggleRecipeMenu);
+
+$(toggleRecipeMenu);
