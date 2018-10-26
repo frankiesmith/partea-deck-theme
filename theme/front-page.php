@@ -60,6 +60,14 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
           </div>
         </div>
       </div>
+    <div class="featured-posts section">
+      <div class="headline zoom">
+          <h1>Featured Posts</h1>
+        </div>
+        <div class="featured-post-wrapper fade-in">
+      <?php echo do_shortcode("[post_grid id='309']"); ?>
+  </div>
+</div>
         <div class="instagram-feed section fade-in-right">
           <div class="insta-header zoom">
             <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
