@@ -11,6 +11,7 @@ require_once __DIR__ . '/cmb2-functions.php';
 
 
 add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' );
 
 
 function partea_enqueue_scripts_styles() {

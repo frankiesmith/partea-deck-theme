@@ -16,14 +16,14 @@ function partea_cmb2_metaboxes() {
   $cmb = new_cmb2_box( array(
     'id'            => $prefix . 'header_image_box',
     'title'         => __( 'Header Image', 'cmb2' ),
-    'object_types'  => array( 'page', ), // Post type
+    'object_types'  => array( 'page', 'post' ), // Post type
     'context'       => 'normal',
     'priority'      => 'high',
     'show_names'    => true, // Show field names on the left
     // 'cmb_styles' => false, // false to disable the CMB stylesheet
     // 'closed'     => true, // Keep the metabox closed by default
-    'show_on' => array( 'key' => 'id', 'value' => array( 36,58,89 ) ), // Specific post IDs to display this metabox
-
+/*    'show_on' => array( 'key' => 'id', 'value' => array( 36,58,89 ) ), // Specific post IDs to display this metabox
+*/
   ) );
 
   $cmb->add_field( array(

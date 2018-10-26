@@ -7,11 +7,11 @@
  * @package fivehdstarter
  */
 
-if ( ! is_active_sidebar( 'featured-sidebar' ) ) {
+if ( ! is_active_sidebar( 'main-sidebar' ) ) {
   return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-  <?php dynamic_sidebar( 'featured-sidebar' ); ?>
-</aside><!-- #secondary -->
+<div id="secondary" class="widget-area">
+  <?php dynamic_sidebar( 'main-sidebar' ); ?>
+</div><!-- #secondary -->
