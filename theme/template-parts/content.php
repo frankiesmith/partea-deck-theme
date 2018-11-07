@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <header class="blog-header fade-in-right">
+  <header class="blog-header">
     <div class="blog-info">
     <?php
     if ( is_singular() ) :
@@ -30,7 +30,7 @@
     endif; ?>
   </header><!-- .entry-header -->
 
-  <div class="entry-content slideUp">
+  <div class="entry-content">
     <?php
       the_content( sprintf(
         wp_kses(
