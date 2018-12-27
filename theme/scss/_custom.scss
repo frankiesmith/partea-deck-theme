@@ -169,7 +169,7 @@ header {
             }
 
 
-            &:first-child a {
+            &:nth-child(5n+1) a {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $orange;
@@ -182,7 +182,7 @@ header {
                 }
             }
 
-            &:nth-child(2) a {
+            &:nth-child(5n+2) a {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: darken($ginger, 20%);
@@ -195,7 +195,7 @@ header {
                 }
             }
 
-            &:nth-child(3) a {
+            &:nth-child(5n+3) a {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $espresso;
@@ -208,7 +208,7 @@ header {
                 }
             }
 
-            &:last-child a {
+            &:nth-child(5n+4) a {
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                     color: $wildberry;
@@ -218,6 +218,19 @@ header {
 
                 &:before {
                     background: $wildberry;
+                }
+            }
+
+            &:nth-child(5n+5) a {
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.75);
+                    color: #2098D1;
+                    transition: .4s all;
+                    transition-delay: .2s;
+                }
+
+                &:before {
+                    background: #2098D1;
                 }
             }
 
