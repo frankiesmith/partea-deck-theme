@@ -282,54 +282,15 @@ header {
                     right: 0;
                 }
             }
-        }
-    }
 
-    .current-menu-item {
-        &.menu-item-164 {
-            a {
-                color: #fff;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+            &.current-menu-item {
+                a {
+                    color: #fff;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 
-                &:hover {
-                    text-shadow: none;
-                }
-
-                &:before {
-                    background: $orange;
-                }
-            }
-        }
-
-        &.menu-item-168 {
-            a {
-                color: #fff;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
-
-                &:hover {
-                    text-shadow: none;
-                }
-            }
-        }
-
-        &.menu-item-170 {
-            a {
-                color: #fff;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
-
-                &:hover {
-                    text-shadow: none;
-                }
-            }
-        }
-
-        &.menu-item-171 {
-            a {
-                color: #fff;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
-
-                &:hover {
-                    text-shadow: none;
+                    &:hover {
+                        text-shadow: none;
+                    }
                 }
             }
         }
