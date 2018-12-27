@@ -644,7 +644,7 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
     }
 
     .wps-btn-secondary.wps-add-to-cart {
-        background: $wildberry;
+        background: $wildberry !important;
 
         &:hover {
             background-color: darken($wildberry, 20%);
