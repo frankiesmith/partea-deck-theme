@@ -17,7 +17,7 @@
 	<footer id="colophon" class="footer">
 		<div class="container">
 		<div class="copyright">
-			<p>© 2018, ParTea Booze Infusers.</p>
+			<p>©<?php echo date("o"); ?>, ParTea Booze Infusers.</p>
 		</div>
 		<div class="social-icons">
 			<a href="https://twitter.com/ParTeaBooze" target="_blank">
