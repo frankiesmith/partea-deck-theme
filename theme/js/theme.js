@@ -75,3 +75,7 @@ jQuery(document).ready(function() {
         offset: 400
        });
 });
+
+jQuery('.search-button').click(function(){
+  jQuery(this).parent().toggleClass('open');
+});

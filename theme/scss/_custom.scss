@@ -73,6 +73,31 @@ h2 {
     }
 }
 
+.secondary-button {
+    font-size: .8rem;
+    width: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background: $orange;
+    transition: .4s all;
+
+    @include breakpoint(small only) {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+
+    &:hover {
+        background-color: darken($orange, 10%);
+        transition: .4s all;
+    }
+}
+
 .hidden {
     opacity: 0;
 }
@@ -1246,11 +1271,6 @@ textarea#nf-field-9 {
 
 /* blog page */
 
-#post-grid-310 {
-    position: relative;
-    overflow: visible;
-}
-
 .post-grid .grid-nav-top .nav-search {
     display: inline-block;
     text-align: center;
@@ -1265,28 +1285,66 @@ textarea#nf-field-9 {
 
 .two-col {
     display: flex;
+    margin-top: 50px;
 
-    @include breakpoint(small only) {
+    @include breakpoint(medium down) {
         flex-direction: column;
     }
 }
 
 .recent-posts {
-    width: 75%;
+    width: 80%;
 
-    @include breakpoint(medium only) {
-        width: 60%;
+    @include breakpoint(medium down) {
+        order: 2;
+        width: 100%;
     }
 
 
-    @include breakpoint(small only) {
-        width: 100%;
+    .posts-wrapper {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #cecece;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .post {
+        @include breakpoint(medium down) {
+            margin-top: 20px;
+        }
+    }
+
+    .post-title {
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .post-date {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .post-image {
+        width: 90%;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint(small only) {
+            width: 100%;
+        }
     }
 }
 
 .tag-search {
-    margin-top: 60px;
-    width: 25%;
+    width: 20%;
+    padding-left: 50px;
+    margin-bottom: 25px;
 
     @include breakpoint(small only) {
         margin-top: 0px;
@@ -1294,6 +1352,7 @@ textarea#nf-field-9 {
 
 
     @include breakpoint(medium only) {
+        order: 1;
         width: 40%;
     }
 
@@ -1311,3 +1370,98 @@ textarea#nf-field-9 {
         list-style: none;
     }
 }
+
+.featured-posts {
+    justify-content: center;
+    padding: 20px;
+
+    @include breakpoint(small only) {
+        padding: 10px;
+    }
+
+
+    .featured-item {
+        display: inline-block;
+        width: 33%;
+        position: relative;
+
+        @include breakpoint(medium down) {
+            width: 100%;
+        }
+
+
+        .post-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .featured-headline {
+            /*             opacity: 0;
+             */
+
+            font-weight: 700;
+            text-align: center;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .featured-tag {
+                display: block;
+                background-color: rgba(51, 51, 51, 0.8);
+                color: #fff;
+                width: 100%;
+                padding: 10px;
+                transition: .4s ease;
+
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    font-weight: 400;
+                }
+
+                h4 {
+                    margin: 0;
+                }
+
+                h3 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .post-tags {
+            a {
+                font-size: .8rem;
+                color: #fff;
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        @include breakpoint(medium down) {
+            display: block;
+        }
+    }
+
+    &.section {
+        margin-top: 0;
+    }
+}
+
+/* Search Box */

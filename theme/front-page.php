@@ -64,8 +64,8 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
       <div class="headline zoom">
           <h1>Featured Posts</h1>
         </div>
-        <div class="featured-post-wrapper fade-in">
-      <?php echo do_shortcode("[post_grid id='309']"); ?>
+        <div class="wrapper fade-in">
+          <?php get_template_part( 'template-parts/content','featured-blog-posts' ); ?>
   </div>
 </div>
         <div class="instagram-feed section fade-in-right">

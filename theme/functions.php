@@ -88,3 +88,10 @@ function hide_editor() {
     remove_post_type_support('page', 'editor'); 
   } 
 } 
+
+//Change Excerpt Length
+
+function custom_excerpt_length( $length ) {
+  return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

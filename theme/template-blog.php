@@ -22,23 +22,22 @@ get_header(); ?>
           echo "\n";
       ?>
     </div>
-    <div class="featured-posts fade-in-right">
-      <?php echo do_shortcode("[post_grid id='309']"); ?>
+    <div class="featured-posts section">
+      <div class="headline zoom">
+          <h1>Featured Posts</h1>
+        </div>
+        <div class="wrapper fade-in">
+          <?php get_template_part( 'template-parts/content','featured-blog-posts' ); ?>
   </div>
+</div>
   <div class="container two-col">
       <div class="recent-posts slideUp">
-      <?php echo do_shortcode("[post_grid id='310']"); ?>
+        <?php get_template_part( 'template-parts/content','recent-posts' ); ?>
   </div>
   <div class="tag-search">
-<?php
-add_action( 'loop_start', 'list_tags_with_count' );
-function list_tags_with_count() {
-$tags = get_tags( array('orderby' => 'count', 'order' => 'DESC') );
-foreach ( (array) $tags as $tag ) {
-echo '<li><a href="' . get_tag_link ($tag->term_id) . '" rel="tag">' . $tag->name . ' (' . $tag->count . ') </a></li>';
-    }
-}
-?>
+<?php get_search_form(); ?>
+</div>
+</div>
       <?php
     while ( have_posts() ) : the_post();
 
