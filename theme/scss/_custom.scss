@@ -550,6 +550,10 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
             margin-top: 0px;
         }
     }
+
+    @include breakpoint(small only) {
+        padding: 0px 20px;
+    }
 }
 
 .resp-container {
@@ -1285,29 +1289,31 @@ textarea#nf-field-9 {
 
 .two-col {
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
 
-    @include breakpoint(medium down) {
+    @include breakpoint(small only) {
         flex-direction: column;
     }
 }
 
 .recent-posts {
-    width: 80%;
+    width: 70%;
 
-    @include breakpoint(medium down) {
-        order: 2;
+    @include breakpoint(small only) {
         width: 100%;
+        order: 2;
     }
 
 
     .posts-wrapper {
         padding-bottom: 50px;
         margin-bottom: 50px;
-        border-bottom: 1px solid #cecece;
+        border-bottom: 1px solid lightgray;
 
         &:last-child {
             border: none;
+            margin-bottom: 25px;
+            padding-bottom: 0;
         }
     }
 
@@ -1321,6 +1327,10 @@ textarea#nf-field-9 {
         margin: 0;
         margin-top: -10px;
         margin-bottom: 10px;
+
+        a {
+            color: $wildberry;
+        }
     }
 
     .post-date {
@@ -1335,30 +1345,31 @@ textarea#nf-field-9 {
         background-size: cover;
         background-position: center;
 
-        @include breakpoint(small only) {
+        @include breakpoint(medium down) {
             width: 100%;
         }
     }
 }
 
 .tag-search {
-    width: 20%;
-    padding-left: 50px;
+    background: url("/wp-content/uploads/2018/08/slider-1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: auto;
+    padding: 20px;
     margin-bottom: 25px;
+    margin-left: 75px;
+    position: sticky;
+    top: 25px;
 
     @include breakpoint(small only) {
+        width: auto;
+        height: auto;
         margin-top: 0px;
-    }
-
-
-    @include breakpoint(medium only) {
         order: 1;
-        width: 40%;
-    }
-
-
-    @include breakpoint(small only) {
-        width: 100%;
+        margin-left: 0;
+        position: static;
     }
 
 
@@ -1369,6 +1380,33 @@ textarea#nf-field-9 {
     li {
         list-style: none;
     }
+
+    .post-tags {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        a {
+            font-size: .8rem;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            margin: 2px;
+            color: #333;
+            transition: .4s all;
+
+            &:hover {
+                background-color: #fff;
+                transition: .4s all;
+            }
+        }
+    }
+
+    form {
+        margin-bottom: 15px;
+    }
+
+    .search-content {}
 }
 
 .featured-posts {

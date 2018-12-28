@@ -5,7 +5,18 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
-<div class="container two-col">
+<div class="container">
+
+<header class="page-header">
+        <h1 class="page-title">
+          <?php
+          the_search_query();
+        ?>
+      </h1>
+      </header><!-- .page-header -->
+
+<div class="two-col">
+  <div class="recent-posts">
 
 <?php
     global $query_string;
@@ -21,32 +32,10 @@ get_header(); ?>
     if ( $the_query->have_posts() ) : 
     ?>
     <!-- the loop -->
-
-    <div class="recent-posts slideUp">
    
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    <div class="grid-x posts-wrapper">
-                    <div class="cell medium-4">
-                      <div class="post-image" style="background-image:url(<?= get_the_post_thumbnail_url($post,'large'); ?>);">
-                      </div>
-                    </div>
-                    <div class="cell medium-8 post">
-                    <h2 class="post-title">
-                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                    <p class="post-date">
-                      <?php echo get_the_date( 'l, F j, Y' ); ?>
-                    </p>
-                      <?php the_excerpt(); ?>
-                      <div class="post-tags"><?php echo get_the_tag_list('<p>',', ','</p>');?></div>
-                      <a class="secondary-button" href="<?php the_permalink(); ?>">Read More</a>
-                    </div>
-                  </div> 
+<?php get_template_part( 'template-parts/content','listed-posts' ); ?>
     <?php endwhile; ?>
-    </div>
-      <div class="tag-search">
-<?php get_search_form(); ?>
-</div>
 
     <!-- end of the loop -->
 
@@ -55,7 +44,17 @@ get_header(); ?>
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
+
+</div>
+
+      <div class="tag-search">
+<div class="search-content">
+<?php get_search_form(); ?>
+<?php get_template_part( 'template-parts/content','tag-list' ); ?>
+</div>
+</div>
   </div>
+</div>
 
     </main><!-- #main -->
   </div><!-- #primary -->

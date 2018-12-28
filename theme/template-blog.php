@@ -35,7 +35,10 @@ get_header(); ?>
         <?php get_template_part( 'template-parts/content','recent-posts' ); ?>
   </div>
   <div class="tag-search">
+<div class="search-content">
 <?php get_search_form(); ?>
+<?php get_template_part( 'template-parts/content','tag-list' ); ?>
+</div>
 </div>
 </div>
       <?php
