@@ -1,13 +1,11 @@
-   <section class="post-section">
-   <?php
-
+ <?php
+    $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
     $args = array(
-      'post_type'      => 'post',
-      'posts_per_page'      => 4,
-      'ignore_sticky_posts'   => 1,
-      'post_status'         => 'publish',
-      'order'         => 'DESC',
-      'order_by'        => 'post_date',
+      'post_type'   => 'post',
+      'paged'       => $paged,
+      'post_status' => 'publish',
+      'order'       => 'DEC',
+      'order_by'    => 'post_date',
     );
     
     $blog_posts = new WP_Query( $args );
@@ -16,10 +14,8 @@
                     
 <?php get_template_part( 'template-parts/content','listed-posts' ); ?>
 
-
                     <?php
     endwhile;
     wp_reset_postdata();
     endif;
   ?>
-</section>

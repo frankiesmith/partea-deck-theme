@@ -14,4 +14,4 @@
 <div class="post-tags"><?php echo get_the_tag_list('<p>',', ','</p>');?></div>
 <a class="secondary-button" href="<?php the_permalink(); ?>">Read More</a>
 </div>
-</div> 
+</div>

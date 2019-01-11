@@ -36,20 +36,19 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/content','listed-posts' ); ?>
     <?php endwhile; ?>
     </div>
-      <div class="tag-search">
-<div class="search-content">
-<?php get_search_form(); ?>
-<?php get_template_part( 'template-parts/content','tag-list' ); ?>
-</div>
-</div>
-
-    <!-- end of the loop -->
+        <!-- end of the loop -->
 
     <?php wp_reset_postdata(); ?>
 
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
+      <div class="tag-search">
+<div class="search-content">
+<?php get_search_form(); ?>
+<?php get_template_part( 'template-parts/content','tag-list' ); ?>
+</div>
+</div>
   </div>
 </div>
 
