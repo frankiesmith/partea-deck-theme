@@ -24,7 +24,7 @@ get_header(); ?>
 
         </div>
       </div>
-sdfdsf
+
       <!-- Content -->
       <div class="container">
         <div class="content section">
