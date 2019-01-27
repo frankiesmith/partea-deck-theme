@@ -1,4 +1,4 @@
-<div class="grid-x posts-wrapper">
+<div class="grid-x posts-wrapper fade-in">
 <div class="cell medium-12 large-4">
 <div class="post-image" style="background-image:url(<?= get_the_post_thumbnail_url($post,'large'); ?>);">
 </div>

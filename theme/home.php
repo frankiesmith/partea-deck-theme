@@ -23,7 +23,7 @@ get_header(); ?>
       ?>
     </div>
     <div class="featured-posts section">
-      <div class="headline zoom">
+      <div class="headline">
           <h1>Featured Posts</h1>
         </div>
         <div class="wrapper fade-in">
@@ -31,7 +31,7 @@ get_header(); ?>
   </div>
 </div>
   <div class="container two-col">
-    <section class="recent-posts slideUp">
+    <section class="recent-posts">
         <?php get_template_part( 'template-parts/content','recent-posts' ); ?>
         <?php get_template_part( 'template-parts/nav','post-pagination' ); ?>
     </section>

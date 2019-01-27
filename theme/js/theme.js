@@ -34,9 +34,11 @@ jQuery(document).ready(function() {
        });
 });
 
+/*Add slide up to featured items*/
+
 jQuery(document).ready(function() {
     jQuery('.wps-product-item').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInUp',
+        classToAdd: 'visible animated fadeIn',
         offset: 100
        });
 });
@@ -65,7 +67,7 @@ jQuery(document).ready(function() {
 jQuery(document).ready(function() {
     jQuery('.fade-in').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
-        offset: 400
+        offset: 100
        });
 });
 

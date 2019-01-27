@@ -28,7 +28,7 @@ get_header(); ?>
       <!-- Content -->
       <div class="container">
         <div class="content section">
-                    <div class="headline zoom">
+                    <div class="headline">
             <?php
     while ( have_posts() ) : the_post();
 
@@ -39,21 +39,21 @@ get_header(); ?>
           </div>
         </div>
         <div class="content section">
-          <div class="headline zoom">
+          <div class="headline">
         <h1>How It Works</h1>
           </div>
           <div class="resp-container">
-            <iframe class="resp-iframe slideUp" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <iframe class="resp-iframe" src="https://www.youtube.com/embed/D5uBwFbIZLE" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
       <div class="featured-products section">
-        <div class="headline zoom">
+        <div class="headline">
           <h1>Featured Products</h1>
         </div>
-        <div class="products-wrapper fade-in">
-          <div class="container slideUp">
+        <div class="products-wrapper">
+          <div class="container">
             <?php 
 echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
 ?>
@@ -61,15 +61,15 @@ echo do_shortcode('[wps_products collections="Featured" add-to-cart="true"]');
         </div>
       </div>
     <div class="featured-posts section">
-      <div class="headline zoom">
+      <div class="headline">
           <h1>Featured Posts</h1>
         </div>
         <div class="wrapper fade-in">
           <?php get_template_part( 'template-parts/content','featured-blog-posts' ); ?>
   </div>
 </div>
-        <div class="instagram-feed section fade-in-right">
-          <div class="insta-header zoom">
+        <div class="instagram-feed section fade-in">
+          <div class="insta-header">
             <h2>Follow <a href="https://www.instagram.com/parteabooze/" target="_blank">@parteabooze</a> on Instagram
           </div>
           <?php 
