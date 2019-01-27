@@ -17,8 +17,9 @@
     <div class="post-image" style="background-image:url(<?= get_the_post_thumbnail_url($post,'large'); ?>);">
     </div>
     <div class="featured-headline">
+      <a href="<?php the_permalink(); ?>" class="featured-link"></a>
         <div class="featured-tag">
-            <h3><?php the_title(); ?></br></h3>
+            <a href="<?php the_permalink(); ?>" class="title"><?php the_title(); ?></a>
             <h4><?php echo get_the_date( 'M. j, Y' ); ?></h4>
             <div class="post-tags"><?php echo get_the_tag_list('<p>',', ','</p>');?></div>
         </div>

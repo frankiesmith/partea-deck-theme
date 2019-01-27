@@ -1434,9 +1434,6 @@ textarea#nf-field-9 {
         }
 
         .featured-headline {
-            /*             opacity: 0;
-             */
-
             font-weight: 700;
             text-align: center;
             position: absolute;
@@ -1450,12 +1447,19 @@ textarea#nf-field-9 {
             justify-content: center;
             align-items: flex-end;
 
+            .featured-link {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
             .featured-tag {
                 display: block;
+                position: absolute;
                 background-color: rgba(51, 51, 51, 0.8);
                 color: #fff;
                 width: 100%;
-                padding: 10px;
+                padding: 10px 0px;
                 transition: .4s ease;
 
                 span {
@@ -1474,6 +1478,14 @@ textarea#nf-field-9 {
 
                 p {
                     margin: 0;
+                }
+
+                a {
+                    color: #fff;
+                }
+
+                .title {
+                    font-size: 1.1rem;
                 }
             }
         }
