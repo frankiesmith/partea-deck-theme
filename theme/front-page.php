@@ -27,7 +27,7 @@ get_header(); ?>
 
       <!-- Content -->
       <div class="container">
-        <div class="content section">
+        <div class="content section first">
                     <div class="headline">
             <?php
     while ( have_posts() ) : the_post();
@@ -37,6 +37,17 @@ get_header(); ?>
     endwhile; // End of the loop.
     ?>
           </div>
+                  <div class="icon-section fade-in">
+          <div class="icon">
+            <?php echo file_get_contents( get_template_directory() . '/img/preservatives.svg' ); ?>
+          </div>
+          <div class="icon">
+            <?php echo file_get_contents( get_template_directory() . '/img/flavor.svg' ); ?>
+          </div>
+          <div class="icon">
+            <?php echo file_get_contents( get_template_directory() . '/img/sugar.svg' ); ?>
+          </div>
+        </div>
         </div>
         <div class="content section">
           <div class="headline">
