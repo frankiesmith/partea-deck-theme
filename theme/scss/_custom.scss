@@ -693,9 +693,11 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 
     .wps-products-img {
         width: 65%;
+        height: auto;
 
         @include breakpoint(small only) {
             width: 50%;
+            height: auto;
         }
     }
 
@@ -781,7 +783,8 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
 }
 
 .archive .wps-products-img {
-    height: 245px;
+    width: 50%;
+    height: auto;
 
     @include breakpoint(small only) {
         width: 100%;
