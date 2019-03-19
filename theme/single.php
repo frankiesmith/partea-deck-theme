@@ -20,7 +20,10 @@ get_header(); ?>
 
       the_post_navigation();
 
+      /*comments_template();*/
+
     endwhile; // End of the loop.
+
     ?>
 
   </div>

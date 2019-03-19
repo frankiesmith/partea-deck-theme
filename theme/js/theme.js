@@ -81,3 +81,24 @@ jQuery(document).ready(function() {
 jQuery('.search-button').click(function(){
   jQuery(this).parent().toggleClass('open');
 });
+
+
+(function($) {
+
+    jQuery('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('.write-review');
+
+        jQuery(this).closest('.accordion').find('.write-review').not(dropDown).slideUp();
+
+        if (jQuery(this).hasClass('active')) {
+            jQuery(this).removeClass('active');
+        } else {
+            jQuery(this).closest('.accordion').find('a.active').removeClass('active');
+            jQuery(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);

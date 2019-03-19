@@ -95,3 +95,9 @@ function custom_excerpt_length( $length ) {
   return 25;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+function comment_support_for_my_custom_post_type() {
+     add_post_type_support( 'wps_products', 'comments' );
+}
+add_action( 'init', 'comment_support_for_my_custom_post_type' );

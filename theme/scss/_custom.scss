@@ -1654,3 +1654,54 @@ textarea#nf-field-9 {
 .navigation li.active a {
     background-color: #3C8DC5;
 }
+
+// ACCORDION
+.accordion {
+    width: 100%;
+    margin: 0 auto 100px;
+    border-top: 2px solid lightgray;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+
+    li {
+        border-bottom: 2px solid lightgray;
+        position: relative;
+
+        .write-review {
+            display: none;
+        }
+    }
+
+    a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-weight: 600;
+        line-height: 3;
+        text-indent: 15px;
+        user-select: none;
+
+        &:after {
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            position: absolute;
+            right: 10px;
+            content: " ";
+            top: 17px;
+            transform: rotate(-45deg);
+            transition: all, 0.2s, ease-in-out;
+        }
+    }
+
+    .write-review {
+        padding: 10px;
+    }
+
+    a.active:after {
+        transform: rotate(45deg);
+        transition: all, 0.2s, ease-in-out;
+    }
+}
