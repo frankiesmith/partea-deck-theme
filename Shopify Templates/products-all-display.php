@@ -13,6 +13,7 @@
 
 */
 
+
 if ( !defined('ABSPATH') ) {
 	exit;
 }
@@ -21,6 +22,7 @@ do_action( 'wps_products_header', $data->query );
 do_action( 'wps_products_header_after', $data->query );
 
 do_action( 'wps_products_before', $data->query );
+
 
 if ($data->amount_of_products > 0) {
 
