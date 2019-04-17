@@ -792,6 +792,66 @@ div#n2-ss-2 .n2-ss-layer .n2-font-b337fd93eaa0094d11d6acc871468b6d-hover {
     }
 }
 
+.post-type-archive-wps_products, .wps-related-products {
+    .wps-product-item {
+        background: #fff;
+    }
+
+    .wps-box {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #fff;
+        justify-content: flex-end;
+        border: 2px solid lightgray;
+        padding: 20px 0;
+
+        /*         @include breakpoint(small only) {
+                    margin-bottom: 30px;
+                } */
+
+        @include breakpoint(small only) {
+            width: 100%;
+        }
+    }
+
+    .wps-row {
+        text-align: center;
+        display: flex;
+        align-items: stretch;
+
+        @include breakpoint(small only) {
+            display: block;
+        }
+    }
+
+    .wps-col-3 {
+        @include breakpoint(small only) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .wps-products-img {
+        height: 200px !important;
+        width: auto;
+    }
+}
+
+.wps-related-products-heading {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.related-products {
+    .container {
+        padding: 0px;
+    }
+}
+
 /* Footer */
 
 .footer {
