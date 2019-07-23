@@ -66,7 +66,7 @@ get_header(); ?>
         <div class="products-wrapper">
           <div class="container">
             <?php 
-echo do_shortcode('[wps_products collections="Home Page" add-to-cart="true"]');
+echo do_shortcode('[wps_products product_type="Featured" wps_products excludes="description, title" wps_products show_featured_only="true"]');
 ?>
           </div>
         </div>
