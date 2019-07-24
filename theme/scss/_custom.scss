@@ -901,7 +901,56 @@ a.wps-products-link {
     }
 }
 
-/* Shop Page */
+.wps-products-all {
+    .wps-products-description {
+        display: none;
+    }
+
+    .wps-thumbnails-wrapper {
+        display: none !important;
+    }
+
+    .wps-w-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px !important;
+    }
+
+    .wps-products-title {
+        text-align: center !important;
+    }
+
+    .wps-product-pricing {
+        text-align: center;
+    }
+
+    .wps-form-control.row.wps-product-quantity-wrapper.m-0 {
+        display: none;
+    }
+
+    .wps-buy-button-wrapper {
+        margin: 0 !important;
+    }
+
+    .wps-btn-next-page {
+        background: $orange !important;
+    }
+
+    .wps-notice-info {
+        display: none;
+    }
+
+    .wps-product-image {
+        max-height: 289px;
+    }
+
+    .wps-product-image-wrapper {
+        text-align: center;
+    }
+}
+
+/* Shop Page (For Products Page Fallback) */
 
 .page-id-606 {
     .wps-items-wrapper {
